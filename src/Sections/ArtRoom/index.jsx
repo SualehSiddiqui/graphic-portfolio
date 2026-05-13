@@ -14,20 +14,20 @@ import artVid8 from '../../Assets/ArtRoom/set8img1.mp4';
 import artVid9 from '../../Assets/ArtRoom/set9img1.mp4';
 
 // ArtRoom images
-import artImg3 from '../../Assets/ArtRoom/set3img1.png';
-import artImg7 from '../../Assets/ArtRoom/set7img1.png';
-import artImg10 from '../../Assets/ArtRoom/set10img1.png';
-import artImg11 from '../../Assets/ArtRoom/set11img1.png';
-import artImg12 from '../../Assets/ArtRoom/set12img1.png';
-import artImg13 from '../../Assets/ArtRoom/set13img1.png';
-import artImg14 from '../../Assets/ArtRoom/set14img1.png';
-import artImg15 from '../../Assets/ArtRoom/set15img1.png';
-import artImg16 from '../../Assets/ArtRoom/set16img1.png';
-import artImg17 from '../../Assets/ArtRoom/set17img1.png';
-import artImg18 from '../../Assets/ArtRoom/set18img1.png';
-import artImg19 from '../../Assets/ArtRoom/set19img1.png';
-import artImg20 from '../../Assets/ArtRoom/set20img1.png';
-import artImg21 from '../../Assets/ArtRoom/set21img1.png';
+import artImg3 from '../../Assets/ArtRoom/set3img1.avif';
+import artImg7 from '../../Assets/ArtRoom/set7img1.avif';
+import artImg10 from '../../Assets/ArtRoom/set10img1.avif';
+import artImg11 from '../../Assets/ArtRoom/set11img1.avif';
+import artImg12 from '../../Assets/ArtRoom/set12img1.avif';
+import artImg13 from '../../Assets/ArtRoom/set13img1.avif';
+import artImg14 from '../../Assets/ArtRoom/set14img1.avif';
+import artImg15 from '../../Assets/ArtRoom/set15img1.avif';
+import artImg16 from '../../Assets/ArtRoom/set16img1.avif';
+import artImg17 from '../../Assets/ArtRoom/set17img1.avif';
+import artImg18 from '../../Assets/ArtRoom/set18img1.avif';
+import artImg19 from '../../Assets/ArtRoom/set19img1.avif';
+import artImg20 from '../../Assets/ArtRoom/set20img1.avif';
+import artImg21 from '../../Assets/ArtRoom/set21img1.avif';
 
 const dataArtRoom = [
     { type: "video", src: artVid1 },

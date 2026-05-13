@@ -6,14 +6,14 @@ import { SvgComponent } from "../../Components";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 //Furry Character
-import Character1img1 from "../../Assets/2DVtuberModel/character1img1.png";
+import Character1img1 from "../../Assets/2DVtuberModel/character1img1.avif";
 import Character1vid2 from "../../Assets/2DVtuberModel/character1img2.mp4";
-import Character2img1 from "../../Assets/2DVtuberModel/character2img1.png";
+import Character2img1 from "../../Assets/2DVtuberModel/character2img1.avif";
 import Character2vid2 from "../../Assets/2DVtuberModel/character2img2.mp4";
-import Character3img1 from "../../Assets/2DVtuberModel/character3img1.png";
+import Character3img1 from "../../Assets/2DVtuberModel/character3img1.avif";
 import Character3vid2 from "../../Assets/2DVtuberModel/character3img2.mp4";
 import Character4vid1 from "../../Assets/2DVtuberModel/character4img1.mp4";
-import Character5img1 from "../../Assets/2DVtuberModel/character5img1.png";
+import Character5img1 from "../../Assets/2DVtuberModel/character5img1.avif";
 import Character5vid2 from "../../Assets/2DVtuberModel/character5img2.mp4";
 import Character6vid1 from "../../Assets/2DVtuberModel/character6img1.mp4";
 
