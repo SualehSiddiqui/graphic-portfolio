@@ -1,7 +1,7 @@
 import "./style.css";
 import { FaXTwitter, FaWhatsapp, FaInstagram, } from "react-icons/fa6";
-import FooterBG from "../../Assets/footer-bg.jpeg"
-import FooterBG2 from "../../Assets/footer-bg-2.jpeg"
+import FooterBG from "../../Assets/footer-bg.avif"
+import FooterBG2 from "../../Assets/footer-bg-2.avif"
 import { useEffect, useState } from "react";
 
 

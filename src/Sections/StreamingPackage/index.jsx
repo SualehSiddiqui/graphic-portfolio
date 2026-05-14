@@ -6,46 +6,46 @@ import { SvgComponent } from "../../Components";
 
 // ⬇️ Your same imports (don’t remove)
 import overlay1 from '../../Assets/StreamPackage/set1img1.mp4';
-import logo1 from '../../Assets/StreamPackage/set1img2.png';
-import screen1 from '../../Assets/StreamPackage/set1img3.png';
-import banner1 from '../../Assets/StreamPackage/set1img4.png';
+import logo1 from '../../Assets/StreamPackage/set1img2.avif';
+import screen1 from '../../Assets/StreamPackage/set1img3.avif';
+import banner1 from '../../Assets/StreamPackage/set1img4.avif';
 
 import overlay2 from '../../Assets/StreamPackage/set2img1.mp4';
-import logo2 from '../../Assets/StreamPackage/set2img2.png';
-import screen2 from '../../Assets/StreamPackage/set2img3.png';
-import banner2 from '../../Assets/StreamPackage/set2img4.png';
+import logo2 from '../../Assets/StreamPackage/set2img2.avif';
+import screen2 from '../../Assets/StreamPackage/set2img3.avif';
+import banner2 from '../../Assets/StreamPackage/set2img4.avif';
 
-import logo3 from '../../Assets/StreamPackage/set3img1.png';
+import logo3 from '../../Assets/StreamPackage/set3img1.avif';
 
-import overlay4 from '../../Assets/StreamPackage/set4img1.png';
-import overlay5 from '../../Assets/StreamPackage/set5img1.png';
-import overlay6 from '../../Assets/StreamPackage/set6img1.png';
-import overlay7 from '../../Assets/StreamPackage/set7img1.png';
-import overlay8 from '../../Assets/StreamPackage/set8img1.png';
-import overlay9 from '../../Assets/StreamPackage/set9img1.png';
-import overlay10 from '../../Assets/StreamPackage/set10img1.png';
-import overlay11 from '../../Assets/StreamPackage/set11img1.png';
+import overlay4 from '../../Assets/StreamPackage/set4img1.avif';
+import overlay5 from '../../Assets/StreamPackage/set5img1.avif';
+import overlay6 from '../../Assets/StreamPackage/set6img1.avif';
+import overlay7 from '../../Assets/StreamPackage/set7img1.avif';
+import overlay8 from '../../Assets/StreamPackage/set8img1.avif';
+import overlay9 from '../../Assets/StreamPackage/set9img1.avif';
+import overlay10 from '../../Assets/StreamPackage/set10img1.avif';
+import overlay11 from '../../Assets/StreamPackage/set11img1.avif';
 import overlay12 from '../../Assets/StreamPackage/set12img1.mp4';
 import overlay13 from '../../Assets/StreamPackage/set13img1.mp4';
 import overlay14 from '../../Assets/StreamPackage/set14img1.mp4';
 import overlay15 from '../../Assets/StreamPackage/set15img1.mp4';
 import overlay16 from '../../Assets/StreamPackage/set16img1.mp4';
-import overlay17 from '../../Assets/StreamPackage/set17img1.png';
-import overlay18 from '../../Assets/StreamPackage/set18img1.png';
-import overlay19 from '../../Assets/StreamPackage/set19img1.png';
-import overlay20 from '../../Assets/StreamPackage/set20img1.png';
-import overlay21 from '../../Assets/StreamPackage/set21img1.png';
+import overlay17 from '../../Assets/StreamPackage/set17img1.avif';
+import overlay18 from '../../Assets/StreamPackage/set18img1.avif';
+import overlay19 from '../../Assets/StreamPackage/set19img1.avif';
+import overlay20 from '../../Assets/StreamPackage/set20img1.avif';
+import overlay21 from '../../Assets/StreamPackage/set21img1.avif';
 import overlay22 from '../../Assets/StreamPackage/set22img1.mp4';
 import overlay23 from '../../Assets/StreamPackage/set23img1.mp4';
 import overlay24 from '../../Assets/StreamPackage/set24img1.mp4';
 import overlay25 from '../../Assets/StreamPackage/set25img1.mp4';
 import overlay26 from '../../Assets/StreamPackage/set26img1.mp4';
-import overlay27 from '../../Assets/StreamPackage/set27img1.png';
-import overlay28 from '../../Assets/StreamPackage/set28img1.png';
-import overlay29 from '../../Assets/StreamPackage/set29img1.png';
-import overlay30 from '../../Assets/StreamPackage/set30img1.png';
-import overlay31 from '../../Assets/StreamPackage/set31img1.png';
-import overlay32 from '../../Assets/StreamPackage/set32img1.png';
+import overlay27 from '../../Assets/StreamPackage/set27img1.avif';
+import overlay28 from '../../Assets/StreamPackage/set28img1.avif';
+import overlay29 from '../../Assets/StreamPackage/set29img1.avif';
+import overlay30 from '../../Assets/StreamPackage/set30img1.avif';
+import overlay31 from '../../Assets/StreamPackage/set31img1.avif';
+import overlay32 from '../../Assets/StreamPackage/set32img1.avif';
 
 // ===================== DATA =====================
 const dataStreamingPackage = {

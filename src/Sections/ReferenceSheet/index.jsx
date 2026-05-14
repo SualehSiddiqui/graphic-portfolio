@@ -3,25 +3,25 @@ import { Container } from "react-bootstrap";
 import { Image } from 'antd';
 import { SvgComponent } from "../../Components";
 
-import ReferenceSheet1 from "../../Assets/ReferenceSheet/character1.png";
-import ReferenceSheet2 from "../../Assets/ReferenceSheet/character2.png";
-import ReferenceSheet3 from "../../Assets/ReferenceSheet/character3.png";
-import ReferenceSheet4 from "../../Assets/ReferenceSheet/character4.png";
-import ReferenceSheet5 from "../../Assets/ReferenceSheet/character5.png";
-import ReferenceSheet6 from "../../Assets/ReferenceSheet/character6.png";
-import ReferenceSheet7 from "../../Assets/ReferenceSheet/character7.png";
-import ReferenceSheet8 from "../../Assets/ReferenceSheet/character8.png";
-import ReferenceSheet9 from "../../Assets/ReferenceSheet/character9.png";
-import ReferenceSheet10 from "../../Assets/ReferenceSheet/character10.png";
-import ReferenceSheet11 from "../../Assets/ReferenceSheet/character11.png";
-import ReferenceSheet12 from "../../Assets/ReferenceSheet/character12.png";
-import ReferenceSheet13 from "../../Assets/ReferenceSheet/character13.png";
-import ReferenceSheet14 from "../../Assets/ReferenceSheet/character14.png";
-import ReferenceSheet15 from "../../Assets/ReferenceSheet/character15.png";
-import ReferenceSheet16 from "../../Assets/ReferenceSheet/character16.png";
-import ReferenceSheet17 from "../../Assets/ReferenceSheet/character17.png";
-import ReferenceSheet18 from "../../Assets/ReferenceSheet/character18.png";
-import ReferenceSheet19 from "../../Assets/ReferenceSheet/character19.png";
+import ReferenceSheet1 from "../../Assets/ReferenceSheet/character1.avif";
+import ReferenceSheet2 from "../../Assets/ReferenceSheet/character2.avif";
+import ReferenceSheet3 from "../../Assets/ReferenceSheet/character3.avif";
+import ReferenceSheet4 from "../../Assets/ReferenceSheet/character4.avif";
+import ReferenceSheet5 from "../../Assets/ReferenceSheet/character5.avif";
+import ReferenceSheet6 from "../../Assets/ReferenceSheet/character6.avif";
+import ReferenceSheet7 from "../../Assets/ReferenceSheet/character7.avif";
+import ReferenceSheet8 from "../../Assets/ReferenceSheet/character8.avif";
+import ReferenceSheet9 from "../../Assets/ReferenceSheet/character9.avif";
+import ReferenceSheet10 from "../../Assets/ReferenceSheet/character10.avif";
+import ReferenceSheet11 from "../../Assets/ReferenceSheet/character11.avif";
+import ReferenceSheet12 from "../../Assets/ReferenceSheet/character12.avif";
+import ReferenceSheet13 from "../../Assets/ReferenceSheet/character13.avif";
+import ReferenceSheet14 from "../../Assets/ReferenceSheet/character14.avif";
+import ReferenceSheet15 from "../../Assets/ReferenceSheet/character15.avif";
+import ReferenceSheet16 from "../../Assets/ReferenceSheet/character16.avif";
+import ReferenceSheet17 from "../../Assets/ReferenceSheet/character17.avif";
+import ReferenceSheet18 from "../../Assets/ReferenceSheet/character18.avif";
+import ReferenceSheet19 from "../../Assets/ReferenceSheet/character19.avif";
 
 const dataReference = {
     landscape: [

@@ -4,45 +4,45 @@ import { Container } from "react-bootstrap";
 import { Image } from 'antd';
 import { SvgComponent } from "../../Components";
 
-import set1img1DND from "../../Assets/PrintableModel/set1img1.png";
-import set1img2DND from "../../Assets/PrintableModel/set1img2.png";
-import set1img3DND from "../../Assets/PrintableModel/set1img3.png";
-import set1img4DND from "../../Assets/PrintableModel/set1img4.png";
-import set1img5DND from "../../Assets/PrintableModel/set1img5.png";
-import set1img6DND from "../../Assets/PrintableModel/set1img6.png";
+import set1img1DND from "../../Assets/PrintableModel/set1img1.avif";
+import set1img2DND from "../../Assets/PrintableModel/set1img2.avif";
+import set1img3DND from "../../Assets/PrintableModel/set1img3.avif";
+import set1img4DND from "../../Assets/PrintableModel/set1img4.avif";
+import set1img5DND from "../../Assets/PrintableModel/set1img5.avif";
+import set1img6DND from "../../Assets/PrintableModel/set1img6.avif";
 
-import set2img1DND from "../../Assets/PrintableModel/set2img1.png";
-import set2img2DND from "../../Assets/PrintableModel/set2img2.png";
-import set2img3DND from "../../Assets/PrintableModel/set2img3.png";
-import set2img4DND from "../../Assets/PrintableModel/set2img4.png";
-import set2img5DND from "../../Assets/PrintableModel/set2img5.png";
-import set2img6DND from "../../Assets/PrintableModel/set2img6.png";
+import set2img1DND from "../../Assets/PrintableModel/set2img1.avif";
+import set2img2DND from "../../Assets/PrintableModel/set2img2.avif";
+import set2img3DND from "../../Assets/PrintableModel/set2img3.avif";
+import set2img4DND from "../../Assets/PrintableModel/set2img4.avif";
+import set2img5DND from "../../Assets/PrintableModel/set2img5.avif";
+import set2img6DND from "../../Assets/PrintableModel/set2img6.avif";
 import set2vid7DND from "../../Assets/PrintableModel/set2img7.mp4";
 
-import set3img1DND from "../../Assets/PrintableModel/set3img1.png";
-import set3img2DND from "../../Assets/PrintableModel/set3img2.png";
+import set3img1DND from "../../Assets/PrintableModel/set3img1.avif";
+import set3img2DND from "../../Assets/PrintableModel/set3img2.avif";
 
-import set4img1DND from "../../Assets/PrintableModel/set4img1.png";
-import set4img2DND from "../../Assets/PrintableModel/set4img2.png";
-import set4img3DND from "../../Assets/PrintableModel/set4img3.png";
-import set4img4DND from "../../Assets/PrintableModel/set4img4.png";
+import set4img1DND from "../../Assets/PrintableModel/set4img1.avif";
+import set4img2DND from "../../Assets/PrintableModel/set4img2.avif";
+import set4img3DND from "../../Assets/PrintableModel/set4img3.avif";
+import set4img4DND from "../../Assets/PrintableModel/set4img4.avif";
 
-import set5img1DND from "../../Assets/PrintableModel/set5img1.png";
-import set5img2DND from "../../Assets/PrintableModel/set5img2.png";
-import set5img3DND from "../../Assets/PrintableModel/set5img3.png";
-import set5img4DND from "../../Assets/PrintableModel/set5img4.png";
-import set5img5DND from "../../Assets/PrintableModel/set5img5.png";
-import set5img6DND from "../../Assets/PrintableModel/set5img6.png";
-import set5img7DND from "../../Assets/PrintableModel/set5img7.png";
+import set5img1DND from "../../Assets/PrintableModel/set5img1.avif";
+import set5img2DND from "../../Assets/PrintableModel/set5img2.avif";
+import set5img3DND from "../../Assets/PrintableModel/set5img3.avif";
+import set5img4DND from "../../Assets/PrintableModel/set5img4.avif";
+import set5img5DND from "../../Assets/PrintableModel/set5img5.avif";
+import set5img6DND from "../../Assets/PrintableModel/set5img6.avif";
+import set5img7DND from "../../Assets/PrintableModel/set5img7.avif";
 
-import set6img1DND from "../../Assets/PrintableModel/set6img1.png";
-import set6img2DND from "../../Assets/PrintableModel/set6img2.png";
-import set6img3DND from "../../Assets/PrintableModel/set6img3.png";
-import set6img4DND from "../../Assets/PrintableModel/set6img4.png";
-import set6img5DND from "../../Assets/PrintableModel/set6img5.png";
-import set6img6DND from "../../Assets/PrintableModel/set6img6.png";
+import set6img1DND from "../../Assets/PrintableModel/set6img1.avif";
+import set6img2DND from "../../Assets/PrintableModel/set6img2.avif";
+import set6img3DND from "../../Assets/PrintableModel/set6img3.avif";
+import set6img4DND from "../../Assets/PrintableModel/set6img4.avif";
+import set6img5DND from "../../Assets/PrintableModel/set6img5.avif";
+import set6img6DND from "../../Assets/PrintableModel/set6img6.avif";
 
-import set7img1DND from "../../Assets/PrintableModel/set7img1.png";
+import set7img1DND from "../../Assets/PrintableModel/set7img1.avif";
 
 const dataDND = {
     set1: {

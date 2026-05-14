@@ -1,7 +1,7 @@
 .main-hero-div {
     width: 100%;
     height: 100vh;
-    background-image: url("../../Assets/hero-bg.png");
+    background-image: url("../../Assets/hero-bg.avif");
     background-size: cover;
     /* background: var(--color-1); */
     /* background: linear-gradient(224deg, rgba(14, 12, 22, 1) 31%, rgba(42, 28, 62, 1) 68%, rgba(47, 33, 48, 0.89) 100%); */

@@ -1,5 +1,5 @@
 import "./style.css";
-import AboutMeImg from "../../Assets/contact-sec.jpeg"
+import AboutMeImg from "../../Assets/contact-sec.avif"
 import { Container } from 'react-bootstrap';
 
 

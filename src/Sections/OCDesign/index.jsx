@@ -3,16 +3,16 @@ import { Container } from "react-bootstrap";
 import { Image } from 'antd';
 import { SvgComponent } from "../../Components";
 
-import character1 from "../../Assets/OCDesign/character1.png";
-import character2 from "../../Assets/OCDesign/character2.png";
-import character3 from "../../Assets/OCDesign/character3.png";
-import character4 from "../../Assets/OCDesign/character4.png";
-import character5 from "../../Assets/OCDesign/character5.png";
-import character6 from "../../Assets/OCDesign/character6.png";
-import character7 from "../../Assets/OCDesign/character7.png";
-import character8 from "../../Assets/OCDesign/character8.png";
-import character9 from "../../Assets/OCDesign/character9.png";
-import character10 from "../../Assets/OCDesign/character10.png";
+import character1 from "../../Assets/OCDesign/character1.avif";
+import character2 from "../../Assets/OCDesign/character2.avif";
+import character3 from "../../Assets/OCDesign/character3.avif";
+import character4 from "../../Assets/OCDesign/character4.avif";
+import character5 from "../../Assets/OCDesign/character5.avif";
+import character6 from "../../Assets/OCDesign/character6.avif";
+import character7 from "../../Assets/OCDesign/character7.avif";
+import character8 from "../../Assets/OCDesign/character8.avif";
+import character9 from "../../Assets/OCDesign/character9.avif";
+import character10 from "../../Assets/OCDesign/character10.avif";
 
 const dataOCDesign = [
     character1, character2, character3, character4, character5,

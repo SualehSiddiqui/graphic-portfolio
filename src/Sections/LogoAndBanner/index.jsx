@@ -9,17 +9,17 @@ import logo1Video from '../../Assets/LogoAndBanner/character1img1.mp4';
 import banner1Video from '../../Assets/LogoAndBanner/character1img2.mp4';
 
 // Set2 - image
-import logo2 from '../../Assets/LogoAndBanner/character2img1.png';
-import banner2 from '../../Assets/LogoAndBanner/character2img2.png';
+import logo2 from '../../Assets/LogoAndBanner/character2img1.avif';
+import banner2 from '../../Assets/LogoAndBanner/character2img2.avif';
 
-import banner3 from '../../Assets/LogoAndBanner/character3img1.png';
-import banner4 from '../../Assets/LogoAndBanner/character4img1.png';
-import banner9 from '../../Assets/LogoAndBanner/character9img1.png';
+import banner3 from '../../Assets/LogoAndBanner/character3img1.avif';
+import banner4 from '../../Assets/LogoAndBanner/character4img1.avif';
+import banner9 from '../../Assets/LogoAndBanner/character9img1.avif';
 
-import logo5 from '../../Assets/LogoAndBanner/character5img1.png';
-import logo6 from '../../Assets/LogoAndBanner/character6img1.png';
-import logo7 from '../../Assets/LogoAndBanner/character7img1.png';
-import logo8 from '../../Assets/LogoAndBanner/character8img1.png';
+import logo5 from '../../Assets/LogoAndBanner/character5img1.avif';
+import logo6 from '../../Assets/LogoAndBanner/character6img1.avif';
+import logo7 from '../../Assets/LogoAndBanner/character7img1.avif';
+import logo8 from '../../Assets/LogoAndBanner/character8img1.avif';
 
 const dataLogoBanner = {
   set1: {

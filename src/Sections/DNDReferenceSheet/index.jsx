@@ -3,10 +3,10 @@ import { Container } from "react-bootstrap";
 import { Image } from 'antd';
 import { SvgComponent } from "../../Components";
 
-import set1img1DND from "../../Assets/DNDReferenceSheet/set1img1.png";
-import set1img2DND from "../../Assets/DNDReferenceSheet/set1img2.png";
-import set1img3DND from "../../Assets/DNDReferenceSheet/set1img3.png";
-import set1img4DND from "../../Assets/DNDReferenceSheet/set1img4.png";
+import set1img1DND from "../../Assets/DNDReferenceSheet/set1img1.avif";
+import set1img2DND from "../../Assets/DNDReferenceSheet/set1img2.avif";
+import set1img3DND from "../../Assets/DNDReferenceSheet/set1img3.avif";
+import set1img4DND from "../../Assets/DNDReferenceSheet/set1img4.avif";
 
 
 const dataDND = {

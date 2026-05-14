@@ -2,16 +2,16 @@ import { Container } from "react-bootstrap";
 import { Image } from 'antd';
 import { SvgComponent } from "../../Components";
 
-import set1img1DND from "../../Assets/DNDGroupArtWork/set1img1.png";
-import set1img2DND from "../../Assets/DNDGroupArtWork/set1img2.png";
-import set2img1DND from "../../Assets/DNDGroupArtWork/set2img1.png";
-import set2img2DND from "../../Assets/DNDGroupArtWork/set2img2.png";
-import set3img1DND from "../../Assets/DNDGroupArtWork/set3img1.png";
-import set3img2DND from "../../Assets/DNDGroupArtWork/set3img2.png";
-import set4img1DND from "../../Assets/DNDGroupArtWork/set4img1.png";
-import set5img1DND from "../../Assets/DNDGroupArtWork/set5img1.png";
-import set6img1DND from "../../Assets/DNDGroupArtWork/set6img1.png";
-import set7img1DND from "../../Assets/DNDGroupArtWork/set7img1.png";
+import set1img1DND from "../../Assets/DNDGroupArtWork/set1img1.avif";
+import set1img2DND from "../../Assets/DNDGroupArtWork/set1img2.avif";
+import set2img1DND from "../../Assets/DNDGroupArtWork/set2img1.avif";
+import set2img2DND from "../../Assets/DNDGroupArtWork/set2img2.avif";
+import set3img1DND from "../../Assets/DNDGroupArtWork/set3img1.avif";
+import set3img2DND from "../../Assets/DNDGroupArtWork/set3img2.avif";
+import set4img1DND from "../../Assets/DNDGroupArtWork/set4img1.avif";
+import set5img1DND from "../../Assets/DNDGroupArtWork/set5img1.avif";
+import set6img1DND from "../../Assets/DNDGroupArtWork/set6img1.avif";
+import set7img1DND from "../../Assets/DNDGroupArtWork/set7img1.avif";
 
 const dataDND = {
     set1: [set1img1DND, set1img2DND],

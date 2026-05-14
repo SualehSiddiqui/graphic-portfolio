@@ -3,13 +3,13 @@ import { Container } from "react-bootstrap";
 import { Image } from 'antd';
 import { SvgComponent } from "../../Components";
 
-import VRCharacter1 from "../../Assets/VRWorld/character1.png";
-import VRCharacter2 from "../../Assets/VRWorld/character2.png";
-import VRCharacter3 from "../../Assets/VRWorld/character3.png";
-import VRCharacter4 from "../../Assets/VRWorld/character4.png";
-import VRCharacter5 from "../../Assets/VRWorld/character5.png";
-import VRCharacter6 from "../../Assets/VRWorld/character6.png";
-import VRCharacter7 from "../../Assets/VRWorld/character7.png";
+import VRCharacter1 from "../../Assets/VRWorld/character1.avif";
+import VRCharacter2 from "../../Assets/VRWorld/character2.avif";
+import VRCharacter3 from "../../Assets/VRWorld/character3.avif";
+import VRCharacter4 from "../../Assets/VRWorld/character4.avif";
+import VRCharacter5 from "../../Assets/VRWorld/character5.avif";
+import VRCharacter6 from "../../Assets/VRWorld/character6.avif";
+import VRCharacter7 from "../../Assets/VRWorld/character7.avif";
 
 const dataVR = {
     images: [
