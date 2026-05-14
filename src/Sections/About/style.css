@@ -98,7 +98,7 @@
 @media only screen and (max-width:768px) {
     .about-sec-main {
         height: auto;
-        background-image: url("../../Assets/about-sec-bg-2.jpeg");
+        background-image: url("../../Assets/about-sec-bg-2.avif");
         padding: 0px;
     }
 
