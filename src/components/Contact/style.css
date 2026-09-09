@@ -1,0 +1,441 @@
+/* =========================================================
+   ARTISTRY WORLD — CONTACT
+   ========================================================= */
+
+.aw-contact {
+    --contact-bg: #08080a;
+    --contact-white: #f5f2ed;
+    --contact-muted: #77747c;
+    --contact-border: rgba(255, 255, 255, 0.1);
+    --contact-purple: #8b5cf6;
+    --contact-pink: #ec4899;
+    --contact-cyan: #22d3ee;
+
+    position: relative;
+
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 140px 5vw;
+
+    overflow: hidden;
+
+    background: var(--contact-bg);
+
+    color: var(--contact-white);
+
+    isolation: isolate;
+}
+
+
+/* =========================================================
+   BACKGROUND
+   ========================================================= */
+
+.contact-grid {
+    position: absolute;
+    inset: 0;
+
+    z-index: -5;
+
+    opacity: 0.2;
+
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.045) 1px,
+            transparent 1px),
+        linear-gradient(90deg,
+            rgba(255, 255, 255, 0.045) 1px,
+            transparent 1px);
+
+    background-size: 70px 70px;
+
+    mask-image: radial-gradient(ellipse at center,
+            black 0%,
+            transparent 75%);
+}
+
+
+.contact-noise {
+    position: absolute;
+    inset: 0;
+
+    z-index: -4;
+
+    opacity: 0.04;
+
+    pointer-events: none;
+
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
+}
+
+
+.contact-glow {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    filter: blur(130px);
+
+    opacity: 0.12;
+
+    pointer-events: none;
+
+    z-index: -3;
+}
+
+
+.contact-glow-one {
+    top: 5%;
+    left: -15%;
+
+    background: var(--contact-purple);
+
+    animation: contactGlowOne 10s ease-in-out infinite alternate;
+}
+
+
+.contact-glow-two {
+    right: -15%;
+    bottom: 0;
+
+    background: var(--contact-pink);
+
+    animation: contactGlowTwo 12s ease-in-out infinite alternate;
+}
+
+
+@keyframes contactGlowOne {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(120px, 80px, 0) scale(1.2);
+    }
+}
+
+
+@keyframes contactGlowTwo {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(-100px, -80px, 0) scale(1.2);
+    }
+}
+
+
+/* =========================================================
+   KICKER
+   ========================================================= */
+
+.contact-kicker {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 40px;
+
+    color: var(--contact-muted);
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 9px;
+
+    letter-spacing: 0.25em;
+}
+
+
+.contact-line {
+    width: 35px;
+    height: 1px;
+
+    background: var(--contact-muted);
+
+    opacity: 0.5;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.contact-title {
+    margin: 0;
+
+    text-align: center;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(70px,
+            12vw,
+            180px);
+
+    font-weight: 600;
+
+    line-height: 0.82;
+
+    letter-spacing: -0.075em;
+
+    text-transform: uppercase;
+}
+
+
+.contact-title span {
+    display: block;
+
+    background: linear-gradient(100deg,
+            var(--contact-white),
+            #aaa6ff 35%,
+            var(--contact-pink) 70%,
+            var(--contact-white));
+
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+
+    animation: contactGradient 8s ease-in-out infinite alternate;
+}
+
+
+@keyframes contactGradient {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: 100% center;
+    }
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.contact-description {
+    max-width: 480px;
+
+    margin: 45px auto 0;
+
+    text-align: center;
+
+    color: var(--contact-muted);
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+   ========================================================= */
+
+.contact-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-top: 45px;
+
+    padding: 8px 8px 8px 28px;
+
+    border: 1px solid var(--contact-border);
+
+    border-radius: 100px;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    color: var(--contact-white);
+
+    text-decoration: none;
+
+    backdrop-filter: blur(15px);
+
+    transition:
+        background 0.35s ease,
+        border-color 0.35s ease,
+        transform 0.35s ease;
+}
+
+
+.contact-button:hover {
+    background: rgba(255, 255, 255, 0.08);
+
+    border-color: rgba(255, 255, 255, 0.3);
+
+    transform: translateY(-4px);
+}
+
+
+.contact-button-text {
+    font-family: "DM Mono", monospace;
+
+    font-size: 10px;
+
+    letter-spacing: 0.15em;
+}
+
+
+.contact-button-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: var(--contact-white);
+
+    color: #09090b;
+}
+
+
+/* =========================================================
+   DECORATIVE SIDE TEXT
+   ========================================================= */
+
+.contact-coordinate {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    color: var(--contact-muted);
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 7px;
+
+    letter-spacing: 0.15em;
+
+    opacity: 0.7;
+}
+
+
+.contact-coordinate-left {
+    left: 5vw;
+    bottom: 55px;
+}
+
+
+.contact-coordinate-right {
+    right: 5vw;
+    bottom: 55px;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .aw-contact {
+        min-height: 80vh;
+
+        padding: 100px 20px;
+    }
+
+
+    .contact-grid {
+        background-size: 45px 45px;
+    }
+
+
+    .contact-kicker {
+        margin-bottom: 30px;
+
+        font-size: 7px;
+
+        letter-spacing: 0.17em;
+    }
+
+
+    .contact-line {
+        width: 20px;
+    }
+
+
+    .contact-title {
+        font-size: 17vw;
+
+        line-height: 0.87;
+
+        letter-spacing: -0.06em;
+    }
+
+
+    .contact-description {
+        max-width: 330px;
+
+        margin-top: 35px;
+
+        font-size: 12px;
+    }
+
+
+    .contact-button {
+        gap: 15px;
+
+        margin-top: 35px;
+
+        padding-left: 18px;
+    }
+
+
+    .contact-button-text {
+        font-size: 8px;
+
+        letter-spacing: 0.1em;
+    }
+
+
+    .contact-button-icon {
+        width: 43px;
+        height: 43px;
+    }
+
+
+    .contact-coordinate {
+        display: none;
+    }
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .contact-glow-one,
+    .contact-glow-two,
+    .contact-title span {
+        animation: none;
+    }
+
+}

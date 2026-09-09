@@ -1,55 +1,78 @@
-import { Container } from "react-bootstrap";
-import { Image } from 'antd';
-import { SvgComponent } from "../../Components";
+import CharacterCards from "../../components/CharacterCards";
 
-import set1img1DND from "../../Assets/DNDGroupArtWork/set1img1.avif";
-import set1img2DND from "../../Assets/DNDGroupArtWork/set1img2.avif";
-import set2img1DND from "../../Assets/DNDGroupArtWork/set2img1.avif";
-import set2img2DND from "../../Assets/DNDGroupArtWork/set2img2.avif";
-import set3img1DND from "../../Assets/DNDGroupArtWork/set3img1.avif";
-import set3img2DND from "../../Assets/DNDGroupArtWork/set3img2.avif";
-import set4img1DND from "../../Assets/DNDGroupArtWork/set4img1.avif";
-import set5img1DND from "../../Assets/DNDGroupArtWork/set5img1.avif";
-import set6img1DND from "../../Assets/DNDGroupArtWork/set6img1.avif";
-import set7img1DND from "../../Assets/DNDGroupArtWork/set7img1.avif";
+// Replace these paths with your actual artwork
+import character1a from "../../assets/DNDGroupArtwork/set1img1.avif";
+import character1b from "../../assets/DNDGroupArtwork/set1img2.avif";
+import character2a from "../../assets/DNDGroupArtwork/set2img1.avif";
+import character2b from "../../assets/DNDGroupArtwork/set2img2.avif";
+import character3a from "../../assets/DNDGroupArtwork/set3img1.avif";
+import character3b from "../../assets/DNDGroupArtwork/set3img2.avif";
+import character4a from "../../assets/DNDGroupArtwork/set4img1.avif";
 
-const dataDND = {
-    set1: [set1img1DND, set1img2DND],
-    set2: [set2img1DND, set2img2DND],
-    set3: [set3img1DND, set3img2DND],
-    set4: [set4img1DND],
-    set5: [set5img1DND],
-    set6: [set6img1DND],
-    set7: [set7img1DND],
+
+const characters = [
+  {
+    id: "01",
+    name: "Character One",
+    orientation: "landscape",
+    media: [
+      {
+        type: "image",
+        src: character1a,
+      },
+      {
+        type: "image",
+        src: character1b,
+      },
+    ]
+  },
+  {
+    id: "02",
+    name: "Character Two",
+    orientation: "landscape",
+    media: [
+      {
+        type: "image",
+        src: character2a,
+      },
+      {
+        type: "image",
+        src: character2b,
+      },
+    ]
+  },
+  {
+    id: "03",
+    name: "Character Three",
+    orientation: "landscape",
+    media: [
+      {
+        type: "image",
+        src: character3a,
+      },
+      {
+        type: "image",
+        src: character3b,
+      },
+    ]
+  },
+  {
+    id: "04",
+    name: "Character Four",
+    orientation: "landscape",
+    media: [
+      {
+        type: "image",
+        src: character4a,
+      },
+    ]
+  },
+];
+
+const DNDGroupArtwork = () => {
+  return (
+    <CharacterCards characters={characters} num={"02"} heading={<h2>DND Group <span>Artworks.</span></h2>} />
+  );
 };
 
-const DNDGroupArtWork = ({ windowWidth }) => {
-    return (
-        <div className="main-img-div" id='dndGroupArtWork'>
-            <h1 id='dnd'>
-                <p data-aos="fade-right" data-aos-duration={600} >
-                    DND Group Art Work
-                </p>
-                <SvgComponent />
-            </h1>
-            <Container className="img-container">
-                {
-                    dataDND && Object.entries(dataDND).map(([key, value]) => {
-                        return value.map(imageUrl => (
-                            <div data-aos="zoom-in" className='character-art-landscape' key={key}>
-                                <Image
-                                    width={300}
-                                    height={200}
-                                    src={imageUrl}
-                                    alt="Image"
-                                />
-                            </div>
-                        ))
-                    })
-                }
-            </Container>
-        </div>
-    )
-}
-
-export default DNDGroupArtWork;
+export default DNDGroupArtwork;

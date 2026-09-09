@@ -1,131 +1,111 @@
-import React from 'react';
-import "./style.css";
-import { Container } from "react-bootstrap";
-import { Image } from 'antd';
-import { SvgComponent } from "../../Components";
+import CharacterCards from "../../components/CharacterCards";
 
-// Set1 - video
-import logo1Video from '../../Assets/LogoAndBanner/character1img1.mp4';
-import banner1Video from '../../Assets/LogoAndBanner/character1img2.mp4';
+// Replace these paths with your actual artwork
+import character1a from "../../assets/LogoAndBanner/set1img1.avif";
+import character2a from "../../assets/LogoAndBanner/set2img1.avif";
+import character3a from "../../assets/LogoAndBanner/set3img1.avif";
+import character4a from "../../assets/LogoAndBanner/set4img1.avif";
+import character4b from "../../assets/LogoAndBanner/set4img2.avif";
+import character5a from "../../assets/LogoAndBanner/set5img1.avif";
+import character5b from "../../assets/LogoAndBanner/set5img2.avif";
+import character6a from "../../assets/LogoAndBanner/set6img1.avif";
 
-// Set2 - image
-import logo2 from '../../Assets/LogoAndBanner/character2img1.avif';
-import banner2 from '../../Assets/LogoAndBanner/character2img2.avif';
 
-import banner3 from '../../Assets/LogoAndBanner/character3img1.avif';
-import banner4 from '../../Assets/LogoAndBanner/character4img1.avif';
-import banner9 from '../../Assets/LogoAndBanner/character9img1.avif';
+const characters = [
+  {
+    id: "01",
+    name: "Character One",
+    orientation: "square",
+    media: [
+      {
+        type: "image",
+        src: character1a,
+      },
+    ]
+  },
+  {
+    id: "02",
+    name: "Character Two",
+    orientation: "square",
+    media: [
+      {
+        type: "image",
+        src: character2a,
+      },
+    ]
+  },
+  {
+    id: "03",
+    name: "Character Three",
+    orientation: "square",
+    media: [
+      {
+        type: "image",
+        src: character3a,
+      },
+    ]
+  },
+  {
+    id: "04",
+    name: "Character Four",
+    orientation: "square",
+    media: [
+      {
+        type: "image",
+        src: character4a,
+      },
+    ]
+  },
+  {
+    id: "05",
+    name: "Character Four",
+    orientation: "landscape",
+    media: [
+      {
+        type: "image",
+        src: character4b,
+      },
+    ]
+  },
+  {
+    id: "05",
+    name: "Character Five",
+    orientation: "square",
+    media: [
+      {
+        type: "image",
+        src: character5a,
+      },
+    ]
+  },
+  {
+    id: "06",
+    name: "Character Five",
+    orientation: "landscape",
+    media: [
+      {
+        type: "image",
+        src: character5b,
+      },
+    ]
+  },
+  {
+    id: "07",
+    name: "Character Six",
+    orientation: "landscape",
+    media: [
+      {
+        type: "image",
+        src: character6a,
+      },
+    ]
+  },
+];
 
-import logo5 from '../../Assets/LogoAndBanner/character5img1.avif';
-import logo6 from '../../Assets/LogoAndBanner/character6img1.avif';
-import logo7 from '../../Assets/LogoAndBanner/character7img1.avif';
-import logo8 from '../../Assets/LogoAndBanner/character8img1.avif';
-
-const dataLogoBanner = {
-  set1: {
-    logo: { video: logo1Video },
-    banner: { video: banner1Video },
-  },
-  set2: {
-    logo: { image: logo2 },
-    banner: { image: banner2 },
-  },
-  set3: {
-    banner: { image: banner3 },
-  },
-  set4: {
-    banner: { image: banner4 },
-  },
-  set5: {
-    logo: { image: logo5 },
-  },
-  set6: {
-    logo: { image: logo6 },
-  },
-  set7: {
-    logo: { image: logo7 },
-  },
-  set8: {
-    logo: { image: logo8 },
-  },
-  set9: {
-    banner: { image: banner9 },
-  },
+const LogoAndBanner = () => {
+  return (
+    <CharacterCards characters={characters} num={"04"} heading={<h2>Logos and <span>Banners.</span></h2>} />
+  );
 };
 
-const LogoAndBanner = ({ windowWidth }) => {
-  return (
-    <div className="main-img-div" id='logoAndBanner'>
-      <h1>
-        <p data-aos="fade-right" data-aos-duration={600} >
-          Logo and Banner
-        </p>
-        <SvgComponent />
-      </h1>
-      <Container className="img-container">
-        {
-          dataLogoBanner && Object.entries(dataLogoBanner).map(([key, value]) => {
-            return (
-              <>
-                {
-                  value.logo && value.logo.image &&
-                  <div data-aos="zoom-in" className="logo-img-div" key={value.logo.image}>
-                    <Image
-                      src={value.logo.image}
-                      alt="Images"
-                      width={300}
-                      height={300}
-                    />
-                  </div>
-                }
-                {
-                  value.logo && value.logo.video &&
-                  <div data-aos="zoom-in" className="logo-img-div" key={value.logo.video}>
-                    <video
-                      width={300}
-                      height={300}
-                      muted
-                      autoPlay
-                      loop
-                      style={{ objectFit: 'cover' }}
-                    >
-                      <source style={{ width: '100%', height: '100%' }} src={value.logo.video} type="video/mp4" />
-                    </video>
-                  </div>
-                }
-                {
-                  value.banner && value.banner.image &&
-                  <div data-aos="zoom-in" className="twitch-img-div" key={value.banner.image}>
-                    <Image
-                      src={value.banner.image}
-                      alt="Images"
-                      width={windowWidth < 430 ? 300 : 400}
-                      height={200}
-                    />
-                  </div>
-                }
-                {
-                  value.banner && value.banner.video &&
-                  <div data-aos="zoom-in" className="twitch-img-div" key={value.banner.video}>
-                    <video
-                      width={windowWidth < 430 ? 300 : 400}
-                      height={200}
-                      muted
-                      autoPlay
-                      loop
-                      style={{ objectFit: 'cover' }}
-                    >
-                      <source style={{ width: '100%', height: '100%' }} src={value.banner.video} type="video/mp4" />
-                    </video>
-                  </div>
-                }
-              </>
-            )
-          })
-        }
-      </Container>
-    </div>
-  )
-}
-
-export default LogoAndBanner
+export default LogoAndBanner;

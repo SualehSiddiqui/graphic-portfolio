@@ -1,55 +1,26 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'aos/dist/aos.css';
-import AOS from 'aos';
-import { useEffect, useState } from "react";
-import { AntiScreenshot, Footer, Hero } from "./Components";
-import {
-  Avatar3d, Avatar2d, CharacterArt, ReferenceSheet, VrWorld, ArtRoom,
-  DND, DNDGroupArtWork, DNDReferenceSheet, PrintableModel, LogoAndBanner,
-  ComicBook, About, Contact, OCDesign, StreamingPackage,
-} from "./Sections";
+import Hero from "./components/hero";
+import { CharacterArtwork, DNDGroupArtwork, LandscapeArtScenes, LogoAndBanner, Models, PrintableModel, ReferenceSheet, TwitchPackage } from "./Sections";
+import CursorTrail from "./components/Cursor";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
-const Portfolio = () => {
-  useEffect(() => {
-    AOS.init();
-  }, [])
-
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    // Define the handler for the resize event  
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    // Add the event listener when the component mounts
-    window.addEventListener('resize', handleResize);
-  }, []);
-
+function App() {
   return (
-    <div>
-      <AntiScreenshot />
+    <>
+      <CursorTrail />
       <Hero />
-      <About />
-      <CharacterArt windowWidth={windowWidth} />
-      <OCDesign windowWidth={windowWidth} />
-      <DND windowWidth={windowWidth} />
-      <Avatar3d windowWidth={windowWidth} />
-      <Avatar2d windowWidth={windowWidth} />
-      <DNDReferenceSheet windowWidth={windowWidth} />
-      <ReferenceSheet windowWidth={windowWidth} />
-      <DNDGroupArtWork windowWidth={windowWidth} />
-      <StreamingPackage windowWidth={windowWidth} />
-      <LogoAndBanner windowWidth={windowWidth} />
-      <PrintableModel windowWidth={windowWidth} />
-      <VrWorld windowWidth={windowWidth} />
-      <ArtRoom windowWidth={windowWidth} />
-      <ComicBook windowWidth={windowWidth} />
+      <CharacterArtwork />
+      <DNDGroupArtwork />
+      <LandscapeArtScenes />
+      <LogoAndBanner />
+      <Models />
+      <PrintableModel />
+      <ReferenceSheet />
+      <TwitchPackage />
       <Contact />
-      {/* <StickyIcons /> */}
       <Footer />
-    </div>
-  )
+    </>
+  );
 }
 
-export default Portfolio;
+export default App;

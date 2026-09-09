@@ -1,24 +1,53 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap");
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  color: white;
-  background-color: var(--color-1) !important;
-  /* background-color: #EDEDED !important; */
-  font-family: "Baloo 2", sans-serif;
-}
+/* =====================================================
+   ROOT
+===================================================== */
 
 :root {
-  --color-1: #0E0C16;
-  --color-2: #7c568d;
+  --bg: #09090b;
+  --white: #f5f2ed;
+  --muted: #99969f;
+  --border: rgba(255, 255, 255, 0.1);
+
+  --purple: #8b5cf6;
+  --pink: #ec4899;
+  --cyan: #22d3ee;
+}
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* =====================================================
+   REDUCED MOTION ACCESSIBILITY
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    scroll-behavior: auto !important;
+  }
 }

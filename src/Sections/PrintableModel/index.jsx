@@ -1,165 +1,221 @@
-import React, { useEffect, useState } from 'react';
-import "./style.css"
-import { Container } from "react-bootstrap";
-import { Image } from 'antd';
-import { SvgComponent } from "../../Components";
+import CharacterCards from "../../components/CharacterCards";
 
-import set1img1DND from "../../Assets/PrintableModel/set1img1.avif";
-import set1img2DND from "../../Assets/PrintableModel/set1img2.avif";
-import set1img3DND from "../../Assets/PrintableModel/set1img3.avif";
-import set1img4DND from "../../Assets/PrintableModel/set1img4.avif";
-import set1img5DND from "../../Assets/PrintableModel/set1img5.avif";
-import set1img6DND from "../../Assets/PrintableModel/set1img6.avif";
+// Replace these paths with your actual artworkimport character1 from "../../assets/Model/character1.avif";
 
-import set2img1DND from "../../Assets/PrintableModel/set2img1.avif";
-import set2img2DND from "../../Assets/PrintableModel/set2img2.avif";
-import set2img3DND from "../../Assets/PrintableModel/set2img3.avif";
-import set2img4DND from "../../Assets/PrintableModel/set2img4.avif";
-import set2img5DND from "../../Assets/PrintableModel/set2img5.avif";
-import set2img6DND from "../../Assets/PrintableModel/set2img6.avif";
-import set2vid7DND from "../../Assets/PrintableModel/set2img7.mp4";
+import character1a from "../../assets/PrintableModel/set1img1.avif";
+import character1b from "../../assets/PrintableModel/set1img2.avif";
+import character1c from "../../assets/PrintableModel/set1img3.avif";
+import character2a from "../../assets/PrintableModel/set2img1.avif";
+import character2b from "../../assets/PrintableModel/set2img2.avif";
+import character2c from "../../assets/PrintableModel/set2img3.avif";
+import character2d from "../../assets/PrintableModel/set2img4.avif";
+import character3a from "../../assets/PrintableModel/set3img1.avif";
+import character3b from "../../assets/PrintableModel/set3img2.avif";
+import character3c from "../../assets/PrintableModel/set3img3.avif";
+import character3d from "../../assets/PrintableModel/set3img4.avif";
+import character4a from "../../assets/PrintableModel/set4img1.avif";
+import character4b from "../../assets/PrintableModel/set4img2.avif";
+import character4c from "../../assets/PrintableModel/set4img3.avif";
+import character5a from "../../assets/PrintableModel/set5img1.avif";
+import character5b from "../../assets/PrintableModel/set5img2.avif";
+import character5c from "../../assets/PrintableModel/set5img3.avif";
+import character5d from "../../assets/PrintableModel/set5img4.avif";
+import character5e from "../../assets/PrintableModel/set5img5.avif";
+import character5f from "../../assets/PrintableModel/set5img6.avif";
+import character6a from "../../assets/PrintableModel/set6img1.avif";
+import character6b from "../../assets/PrintableModel/set6img2.avif";
+import character6c from "../../assets/PrintableModel/set6img3.avif";
+import character7a from "../../assets/PrintableModel/set7img1.avif";
+import character7b from "../../assets/PrintableModel/set7img2.avif";
+import character7c from "../../assets/PrintableModel/set7img3.avif";
+import character8a from "../../assets/PrintableModel/set8img1.avif";
+import character8b from "../../assets/PrintableModel/set8img2.avif";
+import character8c from "../../assets/PrintableModel/set8img3.avif";
+import character8d from "../../assets/PrintableModel/set8img4.avif";
 
-import set3img1DND from "../../Assets/PrintableModel/set3img1.avif";
-import set3img2DND from "../../Assets/PrintableModel/set3img2.avif";
+const characters = [
+  {
+    id: "01",
+    name: "Character One",
+    orientation: "landscape",
+    media: [
+      {
+        type: "image",
+        src: character1a,
+      },
+      {
+        type: "image",
+        src: character1b,
+      },
+      {
+        type: "image",
+        src: character1c,
+      },
+    ]
+  },
+  {
+    id: "02",
+    name: "Character Two",
+    orientation: "landscape",
+    media: [
+      {
+        type: "image",
+        src: character2a,
+      },
+      {
+        type: "image",
+        src: character2b,
+      },
+      {
+        type: "image",
+        src: character2c,
+      },
+      {
+        type: "image",
+        src: character2d,
+      },
+    ]
+  },
+  {
+    id: "03",
+    name: "Character Three",
+    orientation: "landscape",
+    media: [
+      {
+        type: "image",
+        src: character3a,
+      },
+      {
+        type: "image",
+        src: character3b,
+      },
+      {
+        type: "image",
+        src: character3c,
+      },
+      {
+        type: "image",
+        src: character3d,
+      },
+    ]
+  },
+  {
+    id: "04",
+    name: "Character Four",
+    orientation: "landscape",
+    media: [
+      {
+        type: "image",
+        src: character4a,
+      },
+      {
+        type: "image",
+        src: character4b,
+      },
+      {
+        type: "image",
+        src: character4c,
+      },
+    ]
+  },
+  {
+    id: "05",
+    name: "Character Five",
+    orientation: "landscape",
+    media: [
+      {
+        type: "image",
+        src: character5a,
+      },
+      {
+        type: "image",
+        src: character5b,
+      },
+      {
+        type: "image",
+        src: character5c,
+      },
+      {
+        type: "image",
+        src: character5d,
+      },
+      {
+        type: "image",
+        src: character5e,
+      },
+      {
+        type: "image",
+        src: character5f,
+      },
+    ]
+  },
+  {
+    id: "06",
+    name: "Character Six",
+    orientation: "landscape",
+    media: [
+      {
+        type: "image",
+        src: character6a,
+      },
+      {
+        type: "image",
+        src: character6b,
+      },
+      {
+        type: "image",
+        src: character6c,
+      },
+    ]
+  },
+  {
+    id: "07",
+    name: "Character Seven",
+    orientation: "landscape",
+    media: [
+      {
+        type: "image",
+        src: character7a,
+      },
+      {
+        type: "image",
+        src: character7b,
+      },
+      {
+        type: "image",
+        src: character7c,
+      },
+    ]
+  },
+  {
+    id: "08",
+    name: "Character Eight",
+    orientation: "landscape",
+    media: [
+      {
+        type: "image",
+        src: character8a,
+      },
+      {
+        type: "image",
+        src: character8b,
+      },
+      {
+        type: "image",
+        src: character8c,
+      },
+      {
+        type: "image",
+        src: character8d,
+      },
+    ]
+  },
+];
 
-import set4img1DND from "../../Assets/PrintableModel/set4img1.avif";
-import set4img2DND from "../../Assets/PrintableModel/set4img2.avif";
-import set4img3DND from "../../Assets/PrintableModel/set4img3.avif";
-import set4img4DND from "../../Assets/PrintableModel/set4img4.avif";
-
-import set5img1DND from "../../Assets/PrintableModel/set5img1.avif";
-import set5img2DND from "../../Assets/PrintableModel/set5img2.avif";
-import set5img3DND from "../../Assets/PrintableModel/set5img3.avif";
-import set5img4DND from "../../Assets/PrintableModel/set5img4.avif";
-import set5img5DND from "../../Assets/PrintableModel/set5img5.avif";
-import set5img6DND from "../../Assets/PrintableModel/set5img6.avif";
-import set5img7DND from "../../Assets/PrintableModel/set5img7.avif";
-
-import set6img1DND from "../../Assets/PrintableModel/set6img1.avif";
-import set6img2DND from "../../Assets/PrintableModel/set6img2.avif";
-import set6img3DND from "../../Assets/PrintableModel/set6img3.avif";
-import set6img4DND from "../../Assets/PrintableModel/set6img4.avif";
-import set6img5DND from "../../Assets/PrintableModel/set6img5.avif";
-import set6img6DND from "../../Assets/PrintableModel/set6img6.avif";
-
-import set7img1DND from "../../Assets/PrintableModel/set7img1.avif";
-
-const dataDND = {
-    set1: {
-        portrait: { image: [set1img1DND, set1img2DND, set1img3DND, set1img4DND, set1img5DND, set1img6DND], video: [] },
-        landscape: { image: [], video: [] }
-    },
-    set2: {
-        portrait: { image: [set2img1DND, set2img3DND, set2img2DND, set2img4DND, set2img5DND, set2img6DND], video: [] },
-        landscape: { image: [], video: [set2vid7DND] }
-    },
-    set3: {
-        portrait: { image: [set3img1DND, set3img2DND], video: [] },
-        landscape: { image: [], video: [] }
-    },
-    set4: {
-        portrait: { image: [], video: [] },
-        landscape: { image: [set4img1DND, set4img2DND, set4img3DND, set4img4DND], video: [] }
-    },
-    set5: {
-        portrait: { image: [], video: [] },
-        landscape: { image: [set5img1DND, set5img3DND, set5img2DND, set5img4DND, set5img5DND, set5img6DND, set5img7DND], video: [] }
-    },
-    set6: {
-        portrait: { image: [], video: [] },
-        landscape: { image: [set6img1DND, set6img3DND, set6img2DND, set6img4DND, set6img5DND, set6img6DND], video: [] }
-    },
-    set7: {
-        portrait: { image: [], video: [] },
-        landscape: { image: [set7img1DND], video: [] }
-    },
-};
-
-const PrintableModel = ({ windowWidth }) => {
-
-    const [increaseBy, setIncreaseBy] = useState(windowWidth <= 430 ? 6 : 10);
-    const [visibleCount, setVisibleCount] = useState(increaseBy);
-
-    useEffect(() => {
-        const newInc = windowWidth <= 430 ? 6 : 10;
-        setIncreaseBy(newInc);
-        setVisibleCount(newInc);
-    }, [windowWidth]);
-
-    // ========== Collect ALL items in required sequence ==========
-    const orderedItems = [];
-    Object.values(dataDND).forEach(set => {
-        ["portrait", "landscape"].forEach(type => {
-            ["image", "video"].forEach(media => {
-                set[type][media].forEach(src => {
-                    orderedItems.push({
-                        type,
-                        media,
-                        src
-                    });
-                });
-            });
-        });
-    });
-
-    const itemsToShow = orderedItems.slice(0, visibleCount);
-
-    return (
-        <div className="main-img-div" id='printableModel'>
-            <h1 id='dnd'>
-                <p data-aos="fade-right" data-aos-duration={600}>Printable Model</p>
-                <SvgComponent />
-            </h1>
-
-            <Container className="img-container">
-
-                {itemsToShow.map((item, index) => (
-                    item.media === "image" ? (
-                        <div
-                            key={index}
-                            data-aos="zoom-in"
-                            className={item.type === "portrait" ? "character-art-portrait" : "character-art-landscape"}
-                        >
-                            <Image
-                                src={item.src}
-                                alt="IMG"
-                                width={item.type === "portrait" ? 200 : windowWidth < 430 ? 300 : 350}
-                                height={item.type === "portrait" ? (windowWidth < 430 ? 250 : 300) : 200}
-                            />
-                        </div>
-                    ) : (
-                        <div
-                            key={index}
-                            data-aos="zoom-in"
-                            className={item.type === "portrait" ? "character-art-portrait" : "character-art-landscape"}
-                        >
-                            <video
-                                width={item.type === "portrait" ? (windowWidth < 430 ? 300 : 400) : (windowWidth < 430 ? 300 : 350)}
-                                height={200}
-                                muted autoPlay loop style={{ objectFit: 'cover' }}
-                            >
-                                <source src={item.src} type="video/mp4" />
-                            </video>
-                        </div>
-                    )
-                ))}
-
-                {/* 📌 LOAD MORE BUTTON */}
-                <div className="load-more-btn-wrapper">
-                    {visibleCount < orderedItems.length ? (
-                        <button className="load-more-btn" onClick={() => setVisibleCount(prev => prev + increaseBy)}>
-                            Load More
-                        </button>
-                    ) : (
-                        <button className="load-more-btn" onClick={() => setVisibleCount(increaseBy)}>
-                            Show Less
-                        </button>
-                    )}
-                </div>
-
-            </Container>
-        </div>
-    );
+const PrintableModel = () => {
+  return (
+    <CharacterCards characters={characters} num={"06"} heading={<h2>Printable <span>Model.</span></h2>} />
+  );
 };
 
 export default PrintableModel;
