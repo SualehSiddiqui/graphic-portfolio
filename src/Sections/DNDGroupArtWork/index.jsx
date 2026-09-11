@@ -71,7 +71,12 @@ const characters = [
 
 const DNDGroupArtwork = () => {
   return (
-    <CharacterCards characters={characters} num={"02"} heading={<h2>DND Group <span>Artworks.</span></h2>} />
+    <CharacterCards
+      characters={characters}
+      num={"02"}
+      heading={<h2>DND Group <span>Artworks.</span></h2>}
+      id={"dnd-group-artworks"}
+    />
   );
 };
 

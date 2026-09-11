@@ -22,7 +22,6 @@ import character15 from "../../assets/TwitchPackage/set15img1.avif";
 import character16 from "../../assets/TwitchPackage/set16img1.avif";
 import character17 from "../../assets/TwitchPackage/set17img1.avif";
 
-
 const characters = [
   {
     id: "01a",
@@ -248,7 +247,12 @@ const characters = [
 
 const TwitchPackage = () => {
   return (
-    <CharacterCards characters={characters} num={"07"} heading={<h2>Twitch <span>Package.</span></h2>} />
+    <CharacterCards
+      characters={characters}
+      num={"08"}
+      heading={<h2>Twitch <span>Package.</span></h2>}
+      id={"twitch-package"}
+    />
   );
 };
 

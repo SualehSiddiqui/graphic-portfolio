@@ -151,7 +151,12 @@ const characters = [
 
 const CharacterArt = () => {
   return (
-    <CharacterCards characters={characters} num={"01"} heading={<h2>Character <span>Artworks.</span></h2>} />
+    <CharacterCards
+      characters={characters}
+      num={"01"}
+      heading={<h2>Character <span>Artworks.</span></h2>}
+      id={"character-artworks"}
+    />
   );
 };
 

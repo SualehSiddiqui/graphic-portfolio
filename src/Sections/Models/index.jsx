@@ -96,7 +96,12 @@ const characters = [
 
 const Models = () => {
   return (
-    <CharacterCards characters={characters} num={"01"} heading={<h2>2D/3D <span>Models.</span></h2>} />
+    <CharacterCards
+      characters={characters}
+      num={"05"}
+      heading={<h2>2D/3D <span>Models.</span></h2>}
+      id={"2d-3d-models"}
+    />
   );
 };
 

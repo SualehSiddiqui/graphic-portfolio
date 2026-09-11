@@ -68,7 +68,12 @@ const characters = [
 
 const ReferenceSheet = () => {
   return (
-    <CharacterCards characters={characters} num={"07"} heading={<h2>Reference <span>Sheet.</span></h2>} />
+    <CharacterCards
+      characters={characters}
+      num={"07"}
+      heading={<h2>Reference <span>Sheet.</span></h2>}
+      id={"reference-sheet"}
+    />
   );
 };
 

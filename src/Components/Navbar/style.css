@@ -67,87 +67,8 @@
    LOGO
 ========================================================= */
 .navbar-logo {
-    position: relative;
-
-    width: 40px;
-    height: 50px;
-
-    flex-shrink: 0;
-
-    display: grid;
-
-    place-items: center;
-
-    border-radius: 50%;
-
-    color: #09090b;
-
-    font-family:
-        "Manrope",
-        sans-serif;
-
-    font-size: 10px;
-
-    font-weight: 800;
-
-    letter-spacing: -0.5px;
-
-    background:
-        linear-gradient(135deg,
-            #ffffff 0%,
-            #d8c9ff 50%,
-            #a78bfa 100%);
-
-    box-shadow:
-        0 0 30px rgba(167, 139, 250, 0.12);
+    width: 150px;
 }
-
-
-/* OUTER RING */
-.navbar-logo::after {
-    content: "";
-
-    position: absolute;
-
-    inset: -4px;
-
-    border-radius: 50%;
-
-    border:
-        1px solid rgba(255, 255, 255, 0.08);
-
-    pointer-events: none;
-}
-
-
-/* =========================================================
-   BRAND TEXT
-========================================================= */
-.navbar-brand-text {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 2px;
-
-    font-family:
-        "Manrope",
-        sans-serif;
-
-    font-size: 9px;
-
-    line-height: 1.05;
-
-    font-weight: 700;
-
-    letter-spacing: 2.2px;
-}
-
-.navbar-brand-text span:last-child {
-    color:
-        rgba(255, 255, 255, 0.42);
-}
-
 
 /* =========================================================
    CATEGORY WRAPPER
@@ -494,7 +415,7 @@
     }
 
 
-    .navbar-logo {
+    /* .navbar-logo {
         width: 35px;
 
         height: 35px;
@@ -507,7 +428,7 @@
         font-size: 7px;
 
         letter-spacing: 1.8px;
-    }
+    } */
 
 
     .category-item {

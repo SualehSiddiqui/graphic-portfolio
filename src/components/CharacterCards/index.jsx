@@ -194,7 +194,7 @@ const CharacterCard = ({ character, index }) => {
   );
 };
 
-const CharacterCardsComponent = ({ characters, num, heading }) => {
+const CharacterCardsComponent = ({ characters, num, heading, id }) => {
   const scrollerRef = useRef(null);
   const trackRef = useRef(null);
 
@@ -242,7 +242,7 @@ const CharacterCardsComponent = ({ characters, num, heading }) => {
           ease: [0.22, 1, 0.36, 1],
         }}
       >
-        <div>
+        <div id={id}>
           <span className="section-eyebrow">
             {num} — SELECTED COLLECTION
           </span>
@@ -272,7 +272,7 @@ const CharacterCardsComponent = ({ characters, num, heading }) => {
         >
           {characters.map((character, index) => (
             <CharacterCard
-              key={character.id}
+              key={id + character.id}
               character={character}
               index={index}
             />

@@ -128,7 +128,12 @@ const characters = [
 
 const LandscapeArtScenes = () => {
   return (
-    <CharacterCards characters={characters} num={"03"} heading={<h2>Landscape <span>Art Scenes.</span></h2>} />
+    <CharacterCards
+      characters={characters}
+      num={"03"}
+      heading={<h2>Landscape <span>Art Scenes.</span></h2>}
+      id={"landscape-art-scenes"}
+    />
   );
 };
 

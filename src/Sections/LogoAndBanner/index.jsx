@@ -104,7 +104,12 @@ const characters = [
 
 const LogoAndBanner = () => {
   return (
-    <CharacterCards characters={characters} num={"04"} heading={<h2>Logos and <span>Banners.</span></h2>} />
+    <CharacterCards
+      characters={characters}
+      num={"04"}
+      heading={<h2>Logos and <span>Banners.</span></h2>}
+      id={"logos-and-banners"}
+    />
   );
 };
 

@@ -214,7 +214,12 @@ const characters = [
 
 const PrintableModel = () => {
   return (
-    <CharacterCards characters={characters} num={"06"} heading={<h2>Printable <span>Model.</span></h2>} />
+    <CharacterCards
+      characters={characters}
+      num={"06"}
+      heading={<h2>Printable <span>Model.</span></h2>}
+      id={"printable-model"}
+    />
   );
 };
 
