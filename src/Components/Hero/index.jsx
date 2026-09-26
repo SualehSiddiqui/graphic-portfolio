@@ -59,7 +59,7 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.35, duration: 0.7 }}
           >
-            SELECTED CREATIVE WORKS — 2026
+            ESTABLISHED IN 2022
           </motion.p>
 
           <motion.h1
@@ -68,12 +68,10 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
           >
-            <motion.span variants={titleItem}>A WORLD</motion.span>
-
-            <motion.span variants={titleItem}>OF VISUAL</motion.span>
+            <motion.span variants={titleItem}>CREATIVITY BUILT ON</motion.span>
 
             <motion.span className="hero-gradient" variants={titleItem}>
-              STORIES.
+              EXPERIENCE.
             </motion.span>
           </motion.h1>
 
@@ -83,8 +81,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.8 }}
           >
-            A curated collection of ideas, colours, concepts and creative
-            explorations brought to life through design.
+            Since 2022, Artistry World has brought countless creative ideas to life through custom digital artwork, delivering detailed, original work for clients and creators around the world.
           </motion.p>
 
           <motion.a
@@ -114,7 +111,7 @@ const Hero = () => {
           </div>
 
           <div className="stage-word stage-word-bottom">
-            WORLD
+            STUDIO
           </div>
 
           {/* Main 3D artwork reel */}

@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
 
@@ -13,12 +14,12 @@ export default function Footer() {
         {
             name: "Instagram",
             icon: <FaInstagram size={16} />,
-            url: "#",
+            url: "https://www.instagram.com/artistryworldss",
         },
         {
             name: "Twitter",
             icon: <FaXTwitter size={16} />,
-            url: "#",
+            url: "https://x.com/artistryworlds",
         },
     ];
 
@@ -26,11 +27,15 @@ export default function Footer() {
     const footerLinks = [
         {
             label: "Portfolio",
-            target: "#portfolio",
+            target: "/portfolio",
         },
         {
             label: "Contact",
             target: "#contact",
+        },
+        {
+            label: "Policies",
+            target: "/policies",
         },
     ];
 
@@ -141,9 +146,9 @@ export default function Footer() {
 
                         {footerLinks.map((link, index) => (
 
-                            <a
+                            <Link
                                 key={index}
-                                href={link.target}
+                                to={link.target}
                             >
 
                                 <span>
@@ -152,7 +157,7 @@ export default function Footer() {
 
                                 <ArrowUpRight size={13} />
 
-                            </a>
+                            </Link>
 
                         ))}
 
@@ -172,9 +177,9 @@ export default function Footer() {
 
                         {socialLinks.map((social, index) => (
 
-                            <a
+                            <Link
                                 key={index}
-                                href={social.url}
+                                to={social.url}
                                 className="social-link"
                                 aria-label={social.name}
                             >
@@ -192,7 +197,7 @@ export default function Footer() {
                                     className="social-arrow"
                                 />
 
-                            </a>
+                            </Link>
 
                         ))}
 

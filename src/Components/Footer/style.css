@@ -17,7 +17,7 @@
     background: var(--footer-bg);
     color: var(--footer-white);
 
-    padding: 150px 5vw 0;
+    padding: 10px 5vw 0;
 
     isolation: isolate;
 }
@@ -341,9 +341,8 @@
 /* =========================================================
    BRAND
    ========================================================= */
-
 .footer-brand {
-    margin-top: 170px;
+    margin-top: 50px;
 
     border-top: 1px solid var(--footer-border);
 }

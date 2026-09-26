@@ -1,0 +1,1129 @@
+/* =========================================================
+   FOR GAMERS — ARTISTRY WORLD
+   BLACK / WHITE / PURPLE
+========================================================= */
+
+.for-gamers {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    padding: 115px 0 95px;
+
+    background: #000000;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   BACKGROUND NUMBER
+========================================================= */
+
+.gamers-bg-number {
+    position: absolute;
+
+    top: 45px;
+    right: -20px;
+
+    pointer-events: none;
+    user-select: none;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(160px, 24vw, 320px);
+
+    font-weight: 700;
+
+    line-height: 0.8;
+
+    letter-spacing: -0.09em;
+
+    color: rgba(139, 92, 246, 0.035);
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.gamers-container {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1250px, 90%);
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.gamers-header {
+    display: grid;
+
+    grid-template-columns:
+        1fr 0.55fr;
+
+    gap: 80px;
+
+    margin-bottom: 70px;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.gamers-eyebrow {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: rgba(255, 255, 255, 0.38);
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 8px;
+
+    letter-spacing: 1.6px;
+}
+
+
+/* =========================================================
+   HEADER TITLE
+========================================================= */
+.gamers-header h2 {
+    margin: 0;
+
+    color: #f5f2ed;
+
+    font-size: clamp(44px, 5.5vw, 76px);
+
+    font-weight: 500;
+
+    line-height: 0.9;
+
+    letter-spacing: -0.055em;
+}
+
+.gamers-header h2 span {
+    color: #8b5cf6;
+}
+
+/* =========================================================
+   HEADER RIGHT
+========================================================= */
+
+.gamers-header-right {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    padding-bottom: 2px;
+}
+
+
+.gamers-index {
+    align-self: flex-end;
+
+    margin-bottom: 25px;
+
+    color:
+        rgba(255, 255, 255, 0.25);
+
+    font-family:
+        "DM Mono",
+        monospace;
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        1.3px;
+}
+
+
+.gamers-header-right p {
+    max-width: 350px;
+
+    margin: 0 0 2px auto;
+
+    color:
+        rgba(255, 255, 255, 0.52);
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        12px;
+
+    line-height:
+        1.7;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.gamers-intro {
+    display: grid;
+
+    grid-template-columns:
+        0.35fr 1fr;
+
+    gap: 50px;
+
+    padding: 25px 0;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.1);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.gamers-intro>span {
+    padding-top: 3px;
+
+    color:
+        rgba(255, 255, 255, 0.3);
+
+    font-family:
+        "DM Mono",
+        monospace;
+
+    font-size:
+        7px;
+
+    letter-spacing:
+        1.5px;
+}
+
+
+.gamers-intro p {
+    max-width:
+        680px;
+
+    margin: 0;
+
+    color:
+        rgba(255, 255, 255, 0.82);
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(15px, 1.6vw, 20px);
+
+    line-height:
+        1.45;
+
+    letter-spacing:
+        -0.025em;
+}
+
+
+/* =========================================================
+   CATEGORY LIST
+========================================================= */
+
+.gamers-list {
+    margin-top: 55px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* =========================================================
+   CATEGORY ROW
+========================================================= */
+
+.gamer-row {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        65px minmax(0, 1fr) 55px;
+
+    align-items: center;
+
+    min-height:
+        145px;
+
+    padding:
+        24px 0;
+
+    overflow: hidden;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.1);
+
+    cursor: pointer;
+
+    transition:
+        padding 0.55s cubic-bezier(.22, 1, .36, 1),
+        background 0.45s ease;
+}
+
+
+.gamer-row::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+
+    height: 1px;
+
+    background:
+        #8b5cf6;
+
+    transition:
+        width 0.65s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+.gamer-row:hover {
+    padding-left: 12px;
+
+    padding-right: 12px;
+
+    background:
+        rgba(139, 92, 246, 0.025);
+}
+
+
+.gamer-row:hover::before {
+    width: 100%;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.gamer-number {
+    align-self:
+        flex-start;
+
+    padding-top:
+        5px;
+
+    color:
+        rgba(255, 255, 255, 0.27);
+
+    font-family:
+        "DM Mono",
+        monospace;
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        1px;
+
+    transition:
+        color 0.35s ease,
+        transform 0.4s ease;
+}
+
+
+.gamer-row:hover .gamer-number {
+    color:
+        #c084fc;
+
+    transform:
+        translateX(4px);
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.gamer-main {
+    position: relative;
+
+    z-index: 2;
+
+    padding-right:
+        50px;
+}
+
+
+/* =========================================================
+   TITLE LINE
+========================================================= */
+
+.gamer-title-line {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 7px;
+}
+
+
+.gamer-short {
+    color:
+        rgba(255, 255, 255, 0.3);
+
+    font-family:
+        "DM Mono",
+        monospace;
+
+    font-size:
+        7px;
+
+    letter-spacing:
+        1.3px;
+
+    transition:
+        color 0.3s ease;
+}
+
+
+.gamer-row:hover .gamer-short {
+    color:
+        #8b5cf6;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.gamer-icon {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 26px;
+    height: 26px;
+
+    color:
+        rgba(255, 255, 255, 0.45);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.12);
+
+    transition:
+        color 0.4s ease,
+        background 0.4s ease,
+        border-color 0.4s ease,
+        transform 0.5s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+.gamer-row:hover .gamer-icon {
+    color:
+        #ffffff;
+
+    background:
+        #8b5cf6;
+
+    border-color:
+        #8b5cf6;
+
+    transform:
+        rotate(-8deg);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.gamer-main h3 {
+    margin: 0;
+
+    color:
+        rgba(255, 255, 255, 0.82);
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(29px, 4vw, 52px);
+
+    font-weight:
+        500;
+
+    line-height:
+        0.95;
+
+    letter-spacing:
+        -0.055em;
+
+    transition:
+        color 0.4s ease,
+        transform 0.55s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+.gamer-row:hover .gamer-main h3 {
+    color:
+        #ffffff;
+
+    transform:
+        translateX(10px);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.gamer-description {
+    max-width:
+        500px;
+
+    max-height:
+        0;
+
+    margin:
+        0;
+
+    overflow:
+        hidden;
+
+    color:
+        rgba(255, 255, 255, 0.45);
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        10px;
+
+    line-height:
+        1.65;
+
+    opacity:
+        0;
+
+    transform:
+        translateY(-7px);
+
+    transition:
+        max-height 0.5s ease,
+        margin 0.5s ease,
+        opacity 0.4s ease,
+        transform 0.5s ease;
+}
+
+
+.gamer-row:hover .gamer-description {
+    max-height:
+        80px;
+
+    margin-top:
+        13px;
+
+    opacity:
+        1;
+
+    transform:
+        translateY(0);
+}
+
+
+/* =========================================================
+   ITEMS
+========================================================= */
+
+.gamer-items {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    max-height:
+        0;
+
+    margin-top:
+        0;
+
+    overflow:
+        hidden;
+
+    opacity:
+        0;
+
+    transform:
+        translateY(-6px);
+
+    transition:
+        max-height 0.5s ease,
+        margin 0.5s ease,
+        opacity 0.4s ease,
+        transform 0.5s ease;
+}
+
+
+.gamer-row:hover .gamer-items {
+    max-height:
+        55px;
+
+    margin-top:
+        12px;
+
+    opacity:
+        1;
+
+    transform:
+        translateY(0);
+}
+
+
+.gamer-items span {
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    height:
+        23px;
+
+    padding:
+        0 8px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.1);
+
+    color:
+        rgba(255, 255, 255, 0.42);
+
+    font-family:
+        "DM Mono",
+        monospace;
+
+    font-size:
+        6.5px;
+
+    letter-spacing:
+        0.3px;
+
+    transition:
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.gamer-items span:hover {
+    color:
+        #ffffff;
+
+    border-color:
+        rgba(139, 92, 246, 0.65);
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.gamer-arrow {
+    position: relative;
+
+    z-index: 3;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width:
+        40px;
+
+    height:
+        40px;
+
+    margin-left:
+        auto;
+
+    color:
+        rgba(255, 255, 255, 0.45);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.12);
+
+    transition:
+        color 0.35s ease,
+        background 0.35s ease,
+        border-color 0.35s ease,
+        transform 0.5s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+.gamer-row:hover .gamer-arrow {
+    color:
+        #ffffff;
+
+    background:
+        #8b5cf6;
+
+    border-color:
+        #8b5cf6;
+
+    transform:
+        translate(4px, -4px);
+}
+
+
+/* =========================================================
+   WATERMARK
+========================================================= */
+
+.gamer-watermark {
+    position: absolute;
+
+    right:
+        70px;
+
+    bottom:
+        -45px;
+
+    z-index:
+        0;
+
+    color:
+        rgba(139, 92, 246, 0.018);
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        150px;
+
+    font-weight:
+        700;
+
+    line-height:
+        1;
+
+    letter-spacing:
+        -0.09em;
+
+    pointer-events:
+        none;
+
+    user-select:
+        none;
+
+    transform:
+        translateY(12px);
+
+    transition:
+        color 0.6s ease,
+        transform 0.6s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+.gamer-row:hover .gamer-watermark {
+    color:
+        rgba(139, 92, 246, 0.045);
+
+    transform:
+        translateY(0);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .for-gamers {
+        padding:
+            100px 0 85px;
+    }
+
+
+    .gamers-container {
+        width:
+            90%;
+    }
+
+
+    .gamers-header {
+        grid-template-columns:
+            1fr 0.65fr;
+
+        gap:
+            50px;
+
+        margin-bottom:
+            60px;
+    }
+
+
+    .gamer-row {
+        grid-template-columns:
+            55px minmax(0, 1fr) 48px;
+
+        min-height:
+            135px;
+    }
+
+
+    .gamer-main {
+        padding-right:
+            30px;
+    }
+
+
+    .gamer-main h3 {
+        font-size:
+            clamp(27px, 4.5vw, 42px);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .for-gamers {
+        padding:
+            85px 0 70px;
+    }
+
+
+    .gamers-container {
+        width:
+            90%;
+    }
+
+
+    /* Header */
+
+    .gamers-header {
+        display:
+            block;
+
+        margin-bottom:
+            48px;
+    }
+
+
+    .gamers-eyebrow {
+        margin-bottom:
+            18px;
+    }
+
+
+    .gamers-header h2 {
+        font-size:
+            clamp(45px, 13vw, 68px);
+    }
+
+
+    .gamers-header-right {
+        margin-top:
+            30px;
+    }
+
+
+    .gamers-index {
+        align-self:
+            flex-start;
+
+        margin-bottom:
+            15px;
+    }
+
+
+    .gamers-header-right p {
+        margin:
+            0;
+
+        max-width:
+            420px;
+
+        font-size:
+            11px;
+    }
+
+
+    /* Intro */
+
+    .gamers-intro {
+        display:
+            block;
+
+        padding:
+            22px 0;
+    }
+
+
+    .gamers-intro>span {
+        display:
+            block;
+
+        margin-bottom:
+            13px;
+    }
+
+
+    .gamers-intro p {
+        font-size:
+            15px;
+
+        line-height:
+            1.5;
+    }
+
+
+    /* List */
+
+    .gamers-list {
+        margin-top:
+            40px;
+    }
+
+
+    /* Rows */
+
+    .gamer-row {
+        display:
+            grid;
+
+        grid-template-columns:
+            32px minmax(0, 1fr) 38px;
+
+        min-height:
+            100px;
+
+        padding:
+            21px 0;
+    }
+
+
+    .gamer-row:hover {
+        padding-left:
+            8px;
+
+        padding-right:
+            8px;
+    }
+
+
+    .gamer-number {
+        padding-top:
+            3px;
+
+        font-size:
+            7px;
+    }
+
+
+    .gamer-main {
+        padding-right:
+            10px;
+    }
+
+
+    .gamer-title-line {
+        margin-bottom:
+            6px;
+    }
+
+
+    .gamer-short {
+        font-size:
+            6px;
+    }
+
+
+    .gamer-icon {
+        width:
+            23px;
+
+        height:
+            23px;
+    }
+
+
+    .gamer-main h3 {
+        font-size:
+            clamp(24px, 7vw, 34px);
+    }
+
+
+    /*
+       Keep descriptions visible on mobile.
+       This prevents hover-dependent content
+       from becoming inaccessible.
+    */
+
+    .gamer-description {
+        max-height:
+            none;
+
+        margin-top:
+            10px;
+
+        opacity:
+            1;
+
+        transform:
+            none;
+
+        font-size:
+            9px;
+    }
+
+
+    .gamer-items {
+        max-height:
+            none;
+
+        margin-top:
+            11px;
+
+        opacity:
+            1;
+
+        transform:
+            none;
+    }
+
+
+    .gamer-items span {
+        height:
+            21px;
+
+        padding:
+            0 7px;
+
+        font-size:
+            6px;
+    }
+
+
+    .gamer-arrow {
+        width:
+            32px;
+
+        height:
+            32px;
+    }
+
+
+    .gamer-arrow svg {
+        width:
+            16px;
+
+        height:
+            16px;
+    }
+
+
+    .gamer-watermark {
+        right:
+            35px;
+
+        bottom:
+            -20px;
+
+        font-size:
+            90px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .gamers-container {
+        width:
+            91%;
+    }
+
+
+    .gamers-header h2 {
+        font-size:
+            45px;
+    }
+
+
+    .gamers-intro p {
+        font-size:
+            14px;
+    }
+
+
+    .gamer-row {
+        grid-template-columns:
+            27px minmax(0, 1fr) 34px;
+    }
+
+
+    .gamer-main h3 {
+        font-size:
+            24px;
+    }
+
+
+    .gamer-description {
+        font-size:
+            8.5px;
+    }
+
+
+    .gamer-items {
+        gap:
+            4px;
+    }
+
+
+    .gamer-items span {
+        font-size:
+            5.5px;
+    }
+
+
+    .gamer-watermark {
+        font-size:
+            75px;
+    }
+}

@@ -180,7 +180,7 @@ html {
   display: flex;
   flex-direction: column;
 
-  font-size: clamp(4rem, 8vw, 8.5rem);
+  font-size: clamp(3.5rem, 8vw, 6.5rem);
   line-height: 0.88;
 
   letter-spacing: -0.075em;
@@ -224,7 +224,6 @@ html {
 }
 
 /* BUTTON */
-
 .explore-btn {
   display: inline-flex;
   align-items: center;
@@ -251,12 +250,11 @@ html {
 }
 
 /* 3D KINETIC ART STAGE */
-
 .art-stage {
   position: relative;
 
   width: 100%;
-  height: 680px;
+  height: 600px;
 
   display: flex;
   align-items: center;
@@ -270,7 +268,9 @@ html {
 }
 
 
-/* BACKGROUND TYPOGRAPHY */
+/* =========================================================
+   BACKGROUND TYPOGRAPHY — GLITCH / DIGITAL INTERFERENCE
+========================================================= */
 
 .stage-word {
   position: absolute;
@@ -292,7 +292,92 @@ html {
   user-select: none;
 
   white-space: nowrap;
+
+  /* Subtle digital distortion */
+  text-shadow:
+    2px 0 rgba(192, 132, 252, 0.08),
+    -2px 0 rgba(34, 211, 238, 0.06);
+
+  animation:
+    stageWordFloat 8s ease-in-out infinite,
+    stageWordGlitch 2s steps(1, end) infinite;
+
+  will-change: transform, opacity, filter;
 }
+
+/* ---------------------------------------------------------
+   MAIN GLITCH MOVEMENT
+   --------------------------------------------------------- */
+
+@keyframes stageWordGlitch {
+
+  0%,
+  82%,
+  100% {
+    filter: none;
+
+    text-shadow:
+      2px 0 rgba(192, 132, 252, 0.08),
+      -2px 0 rgba(34, 211, 238, 0.06);
+  }
+
+  83% {
+    filter: blur(0.4px);
+
+    text-shadow:
+      5px 0 rgba(192, 132, 252, 0.16),
+      -5px 0 rgba(34, 211, 238, 0.14);
+  }
+
+  84% {
+    filter: blur(0);
+
+    text-shadow:
+      -7px 0 rgba(192, 132, 252, 0.12),
+      7px 0 rgba(34, 211, 238, 0.1);
+  }
+
+  85% {
+    filter: blur(1px);
+
+    text-shadow:
+      3px 0 rgba(255, 255, 255, 0.08),
+      -3px 0 rgba(236, 72, 153, 0.1);
+  }
+
+  86%,
+  100% {
+    filter: none;
+
+    text-shadow:
+      2px 0 rgba(192, 132, 252, 0.08),
+      -2px 0 rgba(34, 211, 238, 0.06);
+  }
+}
+
+
+/* ---------------------------------------------------------
+   SLOW CINEMATIC FLOAT
+   --------------------------------------------------------- */
+
+@keyframes stageWordFloat {
+
+  0%,
+  100% {
+    opacity: 0.72;
+    letter-spacing: -0.09em;
+  }
+
+  50% {
+    opacity: 1;
+    letter-spacing: -0.075em;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   TOP WORD
+   --------------------------------------------------------- */
 
 .stage-word-top {
   top: 12%;
@@ -303,6 +388,11 @@ html {
     translateX(-50%) translateZ(-300px);
 }
 
+
+/* ---------------------------------------------------------
+   BOTTOM WORD
+   --------------------------------------------------------- */
+
 .stage-word-bottom {
   bottom: 10%;
 
@@ -310,8 +400,9 @@ html {
 
   transform:
     translateX(-50%) translateZ(-300px);
-}
 
+  animation-delay: -2.5s;
+}
 
 /* 3D REEL */
 
@@ -718,7 +809,7 @@ html {
   }
 
   .hero-title {
-    font-size: clamp(3.6rem, 16vw, 5.5rem);
+    font-size: clamp(3rem, 16vw, 5.5rem);
   }
 
   .hero-description {
