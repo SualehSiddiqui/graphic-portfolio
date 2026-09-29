@@ -170,27 +170,14 @@ export default function OfficialNotice({
                                     </p>
 
                                     <div className="official-links">
+
                                         <a
-                                            href="https://abc.com"
+                                            href="https://artistryworlds.com"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
                                             <span>
-                                                abc.com
-                                            </span>
-
-                                            <ArrowUpRight
-                                                size={14}
-                                            />
-                                        </a>
-
-                                        <a
-                                            href="https://def.com"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            <span>
-                                                def.com
+                                                artistryworlds.com
                                             </span>
 
                                             <ArrowUpRight

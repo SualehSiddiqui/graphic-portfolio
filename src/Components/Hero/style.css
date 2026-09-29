@@ -1,20 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap");
-
-:root {
-  --bg: #09090b;
-  --white: #f5f2ed;
-  --muted: #99969f;
-  --border: rgba(255, 255, 255, 0.1);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 .hero {
   position: relative;
   min-height: 100vh;
@@ -710,7 +693,10 @@ html {
       transparent);
 }
 
-/* RESPONSIVE */
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
 @media (max-width: 1100px) {
   .art-stage {
     height: 580px;
@@ -757,12 +743,15 @@ html {
   }
 }
 
+
+/* =========================================================
+   TABLET
+========================================================= */
+
 @media (max-width: 1000px) {
   .hero-content {
     grid-template-columns: 1fr;
-
     text-align: center;
-
     padding-top: 60px;
   }
 
@@ -781,8 +770,8 @@ html {
 
   .art-stage {
     height: 520px;
-
     margin-top: 10px;
+    perspective: 1400px;
   }
 
   .stage-info-left {
@@ -794,7 +783,16 @@ html {
   }
 }
 
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media (max-width: 650px) {
+  .hero {
+    min-height: 100svh;
+  }
+
   .hero-nav {
     width: 90%;
     height: 75px;
@@ -806,6 +804,8 @@ html {
 
   .hero-content {
     width: 90%;
+    min-height: auto;
+    padding-top: 45px;
   }
 
   .hero-title {
@@ -814,73 +814,105 @@ html {
 
   .hero-description {
     font-size: 14px;
-  }
-
-  .sparkle-one {
-    right: 5%;
+    line-height: 1.7;
   }
 
   .art-stage {
-    height: 470px;
-
+    width: 100%;
+    height: 430px;
     margin-top: 0;
 
-    perspective: 1200px;
+    /*
+      Important:
+      Smaller perspective prevents the cards from
+      becoming excessively distorted on phones.
+    */
+    perspective: 1000px;
+
+    overflow: visible;
   }
 
+  /*
+    Smaller reel.
+  */
   .art-reel {
-    width: 210px;
-    height: 310px;
+    width: 190px;
+    height: 290px;
+
+    transform-style: preserve-3d;
   }
 
+  /*
+    Smaller cards.
+  */
   .reel-image {
-    width: 190px;
-    height: 275px;
+    width: 175px;
+    height: 255px;
+
+    /*
+      Helps mobile browsers render the 3D cards
+      more consistently.
+    */
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
+
+  /*
+    Tighter 3D radius.
+    The important change is reducing translateZ.
+  */
 
   .reel-image-1 {
     transform:
-      translate(-50%, -50%) rotateY(0deg) translateZ(215px);
+      translate(-50%, -50%) rotateY(0deg) translateZ(195px);
   }
 
   .reel-image-2 {
     transform:
-      translate(-50%, -50%) rotateY(60deg) translateZ(215px);
+      translate(-50%, -50%) rotateY(60deg) translateZ(195px);
   }
 
   .reel-image-3 {
     transform:
-      translate(-50%, -50%) rotateY(120deg) translateZ(215px);
+      translate(-50%, -50%) rotateY(120deg) translateZ(195px);
   }
 
   .reel-image-4 {
     transform:
-      translate(-50%, -50%) rotateY(180deg) translateZ(215px);
+      translate(-50%, -50%) rotateY(180deg) translateZ(195px);
   }
 
   .reel-image-5 {
     transform:
-      translate(-50%, -50%) rotateY(240deg) translateZ(215px);
+      translate(-50%, -50%) rotateY(240deg) translateZ(195px);
   }
 
   .reel-image-6 {
     transform:
-      translate(-50%, -50%) rotateY(300deg) translateZ(215px);
+      translate(-50%, -50%) rotateY(300deg) translateZ(195px);
   }
+
+  /*
+    Background typography becomes smaller so it
+    doesn't compete with the cards.
+  */
 
   .stage-word {
     font-size: 6rem;
-
     opacity: 0.8;
   }
+
+  /*
+    Hide secondary information on small screens.
+  */
 
   .stage-info {
     display: none;
   }
 
   .stage-indicator {
-    right: 1%;
-
+    right: 2%;
     bottom: 4%;
   }
 
@@ -890,28 +922,166 @@ html {
   }
 }
 
-@media (max-width: 400px) {
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+  .hero-nav {
+    width: 92%;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .hero-content {
+    padding-top: 35px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.8rem, 17vw, 4.5rem);
+  }
+
+  .hero-description {
+    max-width: 340px;
+    font-size: 13px;
+  }
+
   .art-stage {
-    height: 430px;
+    height: 390px;
+
+    /*
+      Even lower perspective on narrow screens.
+    */
+    perspective: 850px;
   }
 
   .art-reel {
-    width: 180px;
-    height: 270px;
+    width: 165px;
+    height: 260px;
   }
 
   .reel-image {
-    width: 165px;
-    height: 240px;
+    width: 150px;
+    height: 220px;
   }
 
-  .reel-image-1,
-  .reel-image-2,
-  .reel-image-3,
-  .reel-image-4,
-  .reel-image-5,
+  /*
+    Smaller radius keeps the entire reel
+    inside the phone viewport.
+  */
+
+  .reel-image-1 {
+    transform:
+      translate(-50%, -50%) rotateY(0deg) translateZ(165px);
+  }
+
+  .reel-image-2 {
+    transform:
+      translate(-50%, -50%) rotateY(60deg) translateZ(165px);
+  }
+
+  .reel-image-3 {
+    transform:
+      translate(-50%, -50%) rotateY(120deg) translateZ(165px);
+  }
+
+  .reel-image-4 {
+    transform:
+      translate(-50%, -50%) rotateY(180deg) translateZ(165px);
+  }
+
+  .reel-image-5 {
+    transform:
+      translate(-50%, -50%) rotateY(240deg) translateZ(165px);
+  }
+
   .reel-image-6 {
     transform:
-      translate(-50%, -50%) rotateY(var(--rotation)) translateZ(185px);
+      translate(-50%, -50%) rotateY(300deg) translateZ(165px);
+  }
+
+  .stage-word {
+    font-size: 5rem;
+  }
+
+  .stage-indicator {
+    display: none;
+  }
+
+  .stage-light {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: 2.7rem;
+  }
+
+  .hero-description {
+    font-size: 12px;
+    max-width: 300px;
+  }
+
+  .art-stage {
+    height: 350px;
+    perspective: 700px;
+  }
+
+  .art-reel {
+    width: 145px;
+    height: 225px;
+  }
+
+  .reel-image {
+    width: 132px;
+    height: 195px;
+  }
+
+  /*
+    Final mobile radius.
+  */
+
+  .reel-image-1 {
+    transform:
+      translate(-50%, -50%) rotateY(0deg) translateZ(140px);
+  }
+
+  .reel-image-2 {
+    transform:
+      translate(-50%, -50%) rotateY(60deg) translateZ(140px);
+  }
+
+  .reel-image-3 {
+    transform:
+      translate(-50%, -50%) rotateY(120deg) translateZ(140px);
+  }
+
+  .reel-image-4 {
+    transform:
+      translate(-50%, -50%) rotateY(180deg) translateZ(140px);
+  }
+
+  .reel-image-5 {
+    transform:
+      translate(-50%, -50%) rotateY(240deg) translateZ(140px);
+  }
+
+  .reel-image-6 {
+    transform:
+      translate(-50%, -50%) rotateY(300deg) translateZ(140px);
+  }
+
+  .stage-word {
+    font-size: 4rem;
   }
 }

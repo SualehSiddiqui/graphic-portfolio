@@ -94,6 +94,7 @@ const menuVariants = {
     hidden: {
         x: "100%",
     },
+
     visible: {
         x: 0,
         transition: {
@@ -101,6 +102,7 @@ const menuVariants = {
             ease: [0.22, 1, 0.36, 1],
         },
     },
+
     exit: {
         x: "100%",
         transition: {
@@ -115,6 +117,7 @@ const itemVariants = {
         opacity: 0,
         x: 35,
     },
+
     visible: (index) => ({
         opacity: 1,
         x: 0,
@@ -129,15 +132,30 @@ const itemVariants = {
 const Navbar = () => {
     const location = useLocation();
 
+    // Portfolio categories menu
     const [menuOpen, setMenuOpen] = useState(false);
+
+    // Mobile site navigation menu
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const closeMenu = () => {
         setMenuOpen(false);
     };
 
+    const closeMobileMenu = () => {
+        setMobileMenuOpen(false);
+    };
+
+    const handleMobileNavClick = () => {
+        setMobileMenuOpen(false);
+        setMenuOpen(false);
+    };
+
     return (
         <>
-            {/* NAVBAR */}
+            {/* =====================================================
+                NAVBAR
+            ===================================================== */}
 
             <motion.header
                 className="navbar"
@@ -156,29 +174,36 @@ const Navbar = () => {
             >
                 <div className="navbar-inner">
 
-                    {/* LOGO */}
+                    {/* =================================================
+                        LOGO
+                    ================================================= */}
 
                     <Link
                         to="/"
                         className="navbar-brand"
-                        onClick={closeMenu}
+                        onClick={() => {
+                            closeMenu();
+                            closeMobileMenu();
+                        }}
                     >
                         <img
                             src={Logo}
-                            alt="Logo"
+                            alt="Artistry Worlds"
                             className="navbar-logo"
                         />
                     </Link>
 
 
-                    {/* NAV LINKS */}
+                    {/* =================================================
+                        DESKTOP NAVIGATION
+                    ================================================= */}
 
                     <nav className="main-nav">
 
-                        {navLinks.map((item, index) => (
+                        {navLinks.map((item) => (
                             <motion.a
                                 key={item.link}
-                                href={`${item.link}`}
+                                href={item.link}
                                 className="main-nav-link"
                                 whileHover={{
                                     y: -2,
@@ -201,24 +226,28 @@ const Navbar = () => {
                     </nav>
 
 
-                    {/* HAMBURGER */}
+                    {/* =================================================
+                        PORTFOLIO CATEGORY BUTTON
+                        Only visible on portfolio
+                    ================================================= */}
 
-                    {
-                        location.pathname == "/portfolio" &&
+                    {location.pathname === "/portfolio" && (
                         <motion.button
                             className={`menu-button ${menuOpen ? "active" : ""
                                 }`}
-                            onClick={() => setMenuOpen(!menuOpen)}
+                            onClick={() => {
+                                setMenuOpen((prev) => !prev);
+                                setMobileMenuOpen(false);
+                            }}
                             whileTap={{
                                 scale: 0.92,
                             }}
-                            aria-label="Toggle menu"
+                            aria-label="Toggle portfolio categories"
                         >
 
                             <span className="menu-label">
-                                {menuOpen ? "CLOSE" : "MENU"}
+                                {menuOpen ? "CLOSE" : "CATEGORIES"}
                             </span>
-
 
                             <span className="menu-icon">
 
@@ -272,22 +301,98 @@ const Navbar = () => {
 
                             </span>
 
-
                         </motion.button>
-                    }
+                    )}
 
+
+                    {/* =================================================
+                        MOBILE SITE MENU BUTTON
+                        This is ALWAYS available on mobile
+                    ================================================= */}
+
+                    <motion.button
+                        className={`mobile-menu-button ${mobileMenuOpen ? "active" : ""
+                            }`}
+                        onClick={() => {
+                            setMobileMenuOpen((prev) => !prev);
+                            setMenuOpen(false);
+                        }}
+                        whileTap={{
+                            scale: 0.92,
+                        }}
+                        aria-label="Toggle mobile navigation"
+                    >
+
+                        <span className="mobile-menu-label">
+                            {mobileMenuOpen ? "CLOSE" : "MENU"}
+                        </span>
+
+                        <span className="mobile-menu-icon">
+
+                            <AnimatePresence mode="wait">
+
+                                {mobileMenuOpen ? (
+                                    <motion.div
+                                        key="mobile-close"
+                                        initial={{
+                                            rotate: -90,
+                                            opacity: 0,
+                                        }}
+                                        animate={{
+                                            rotate: 0,
+                                            opacity: 1,
+                                        }}
+                                        exit={{
+                                            rotate: 90,
+                                            opacity: 0,
+                                        }}
+                                        transition={{
+                                            duration: 0.25,
+                                        }}
+                                    >
+                                        <X size={20} />
+                                    </motion.div>
+                                ) : (
+                                    <motion.div
+                                        key="mobile-menu"
+                                        initial={{
+                                            rotate: 90,
+                                            opacity: 0,
+                                        }}
+                                        animate={{
+                                            rotate: 0,
+                                            opacity: 1,
+                                        }}
+                                        exit={{
+                                            rotate: -90,
+                                            opacity: 0,
+                                        }}
+                                        transition={{
+                                            duration: 0.25,
+                                        }}
+                                    >
+                                        <Menu size={20} />
+                                    </motion.div>
+                                )}
+
+                            </AnimatePresence>
+
+                        </span>
+
+                    </motion.button>
 
                 </div>
             </motion.header>
 
 
-            {/* OVERLAY + SLIDER */}
+            {/* =========================================================
+                PORTFOLIO CATEGORY SLIDER
+            ========================================================= */}
 
             <AnimatePresence>
 
-                {menuOpen && (
+                {menuOpen && location.pathname === "/portfolio" && (
                     <>
-
                         {/* BACKDROP */}
 
                         <motion.div
@@ -308,7 +413,7 @@ const Navbar = () => {
                         />
 
 
-                        {/* SLIDER */}
+                        {/* PANEL */}
 
                         <motion.aside
                             className="category-panel"
@@ -318,19 +423,15 @@ const Navbar = () => {
                             exit="exit"
                         >
 
-                            {/* Decorative glow */}
-
                             <div className="panel-glow panel-glow-purple" />
                             <div className="panel-glow panel-glow-pink" />
 
-
                             <div className="panel-content">
-
-                                {/* HEADER */}
 
                                 <div className="panel-header">
 
                                     <div>
+
                                         <span className="panel-eyebrow">
                                             EXPLORE THE WORK
                                         </span>
@@ -340,6 +441,7 @@ const Navbar = () => {
                                             <br />
                                             Categories<span>.</span>
                                         </h2>
+
                                     </div>
 
                                     <span className="panel-number">
@@ -348,8 +450,6 @@ const Navbar = () => {
 
                                 </div>
 
-
-                                {/* CATEGORY LIST */}
 
                                 <div className="category-list">
 
@@ -368,8 +468,9 @@ const Navbar = () => {
                                             >
 
                                                 <div className="category-index">
-                                                    0
-                                                    {index + 1}
+                                                    {String(
+                                                        index + 1
+                                                    ).padStart(2, "0")}
                                                 </div>
 
                                                 <div className="category-title">
@@ -388,9 +489,7 @@ const Navbar = () => {
                                                         duration: 0.25,
                                                     }}
                                                 >
-                                                    <ArrowRight
-                                                        size={18}
-                                                    />
+                                                    <ArrowRight size={18} />
                                                 </motion.div>
 
                                             </motion.a>
@@ -399,8 +498,6 @@ const Navbar = () => {
 
                                 </div>
 
-
-                                {/* FOOTER */}
 
                                 <motion.div
                                     className="panel-footer"
@@ -427,6 +524,139 @@ const Navbar = () => {
                                     </span>
 
                                 </motion.div>
+
+                            </div>
+
+                        </motion.aside>
+
+                    </>
+                )}
+
+            </AnimatePresence>
+
+
+            {/* =========================================================
+                MOBILE SITE NAVIGATION SLIDER
+            ========================================================= */}
+
+            <AnimatePresence>
+
+                {mobileMenuOpen && (
+                    <>
+                        {/* BACKDROP */}
+
+                        <motion.div
+                            className="mobile-nav-backdrop"
+                            initial={{
+                                opacity: 0,
+                            }}
+                            animate={{
+                                opacity: 1,
+                            }}
+                            exit={{
+                                opacity: 0,
+                            }}
+                            transition={{
+                                duration: 0.4,
+                            }}
+                            onClick={closeMobileMenu}
+                        />
+
+
+                        {/* MOBILE PANEL */}
+
+                        <motion.aside
+                            className="mobile-nav-panel"
+                            variants={menuVariants}
+                            initial="hidden"
+                            animate="visible"
+                            exit="exit"
+                        >
+
+                            <div className="mobile-nav-content">
+
+                                {/* HEADER */}
+
+                                <div className="mobile-nav-header">
+
+                                    <div>
+
+                                        <span className="mobile-nav-eyebrow">
+                                            ARTISTRY WORLDS
+                                        </span>
+
+                                        <h2 className="mobile-nav-title">
+                                            Explore<span>.</span>
+                                        </h2>
+
+                                    </div>
+
+                                    <button
+                                        className="mobile-nav-close"
+                                        onClick={closeMobileMenu}
+                                        aria-label="Close navigation"
+                                    >
+                                        <X size={19} />
+                                    </button>
+
+                                </div>
+
+
+                                {/* LINKS */}
+
+                                <nav className="mobile-nav-links">
+
+                                    {navLinks.map(
+                                        (item, index) => (
+                                            <motion.a
+                                                key={item.link}
+                                                href={item.link}
+                                                className="mobile-nav-item"
+                                                custom={index}
+                                                variants={itemVariants}
+                                                initial="hidden"
+                                                animate="visible"
+                                                onClick={
+                                                    handleMobileNavClick
+                                                }
+                                            >
+
+                                                <span className="mobile-nav-index">
+                                                    {String(
+                                                        index + 1
+                                                    ).padStart(2, "0")}
+                                                </span>
+
+                                                <span className="mobile-nav-label">
+                                                    {item.name}
+                                                </span>
+
+                                                <span className="mobile-nav-arrow">
+                                                    <ArrowUpRight
+                                                        size={15}
+                                                    />
+                                                </span>
+
+                                            </motion.a>
+                                        )
+                                    )}
+
+                                </nav>
+
+
+                                {/* FOOTER */}
+
+                                <div className="mobile-nav-footer">
+
+                                    <span>
+                                        NAVIGATION
+                                    </span>
+
+                                    <span>
+                                        2026 — ARTISTRY WORLDS
+                                    </span>
+
+                                </div>
 
                             </div>
 

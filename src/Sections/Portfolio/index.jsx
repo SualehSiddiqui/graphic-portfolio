@@ -119,17 +119,6 @@ export default function PortfolioPreview() {
                         <div className="portfolio-featured-category">
                             {featuredWork[0].category}
                         </div>
-
-                        {/* <motion.a
-                            className="portfolio-featured-arrow"
-                            whileHover={{
-                                scale: 1.08,
-                                rotate: 45,
-                            }}
-                            href={featuredWork[0].link}
-                        >
-                            <ArrowUpRight size={24} />
-                        </motion.a> */}
                     </div>
 
                     <div className="portfolio-featured-info">

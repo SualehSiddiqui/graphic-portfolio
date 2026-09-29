@@ -344,21 +344,13 @@ const policies = [
                 </p>
 
                 <div className="policy-sites">
-                    <a
-                        href="https://abc.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <span>abc.com</span>
-                        <ArrowUpRight size={15} />
-                    </a>
 
                     <a
-                        href="https://def.com"
+                        href="https://artistryworlds.com"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <span>def.com</span>
+                        <span>artistryworlds.com</span>
                         <ArrowUpRight size={15} />
                     </a>
                 </div>
@@ -515,7 +507,7 @@ export default function Policies() {
                         </p>
 
                         <a
-                            href="mailto:official@example.com"
+                            href="mailto:info@artistryworlds.com"
                             className="policies-contact"
                         >
                             <span>Contact Official Support</span>
