@@ -12,80 +12,86 @@ import character7 from "../../../assets/OCDesign/character7.avif";
 const characters = [
   {
     id: "01",
-    name: "Character One",
+    name: "Original Character Design 01",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character1,
       },
-    ]
+    ],
   },
+
   {
     id: "02",
-    name: "Character Two",
+    name: "Original Character Design 02",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character2,
       },
-    ]
+    ],
   },
+
   {
     id: "03",
-    name: "Character Three",
+    name: "Original Character Design 03",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character3,
       },
-    ]
+    ],
   },
+
   {
     id: "04",
-    name: "Character Four",
+    name: "Original Character Design 04",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character4,
       },
-    ]
+    ],
   },
+
   {
     id: "05",
-    name: "Character Five",
+    name: "Original Character Design 05",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character5,
       },
-    ]
+    ],
   },
+
   {
     id: "06",
-    name: "Character Six",
+    name: "Original Character Design 06",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character6,
       },
-    ]
+    ],
   },
+
   {
     id: "07",
-    name: "Character Seven",
+    name: "Original Character Design 07",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character7,
       },
-    ]
+    ],
   },
 ];
 
@@ -93,7 +99,7 @@ const OCDesign = () => {
   return (
     <CharacterCards
       characters={characters}
-      num={"12"}
+      num={"13"}
       heading={<h2>OC <span>Design.</span></h2>}
       id={"oc-design"}
     />

@@ -7,6 +7,7 @@ import CursorTrail from "./Cursor";
 import CharacterCardsComponent from "./CharacterCards";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
+import ScrollToTheSection from "./ScrollToTheSection";
 
 
 export {
@@ -19,5 +20,6 @@ export {
     CharacterCardsComponent,
     Footer,
     ScrollToTop,
+    ScrollToTheSection,
 }
 

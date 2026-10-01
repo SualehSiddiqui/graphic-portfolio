@@ -2,7 +2,8 @@ import { useState } from "react";
 import {
     Hero,
     Footer,
-    OfficialNotice
+    OfficialNotice,
+    ScrollToTheSection
 } from "../../components";
 import {
     Services,
@@ -19,6 +20,7 @@ function Home() {
 
     return (
         <>
+            <ScrollToTheSection />
             <OfficialNotice
                 isOpen={noticeOpen}
                 onClose={() => setNoticeOpen(false)}

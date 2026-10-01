@@ -20,168 +20,182 @@ import character15 from "../../../assets/CharacterArtwork/character15.avif";
 const characters = [
   {
     id: "01",
-    name: "Character One",
+    name: "Character Artwork 01",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character1,
       },
-    ]
+    ],
   },
+
   {
     id: "02",
-    name: "Character Two",
+    name: "Character Artwork 02",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character2,
       },
-    ]
+    ],
   },
+
   {
     id: "03",
-    name: "Character Three",
+    name: "Character Artwork 03",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character3,
       },
-    ]
+    ],
   },
+
   {
     id: "04",
-    name: "Character Four",
+    name: "Character Artwork 04",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character4,
       },
-    ]
+    ],
   },
+
   {
     id: "05",
-    name: "Character Five",
+    name: "Character Artwork 05",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character5,
       },
-    ]
+    ],
   },
+
   {
     id: "06",
-    name: "Character Six",
+    name: "Character Artwork 06",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character6,
       },
-    ]
+    ],
   },
+
   {
     id: "07",
-    name: "Character Seven",
+    name: "Character Artwork 07",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character7,
       },
-    ]
+    ],
   },
+
   {
     id: "08",
-    name: "Character Eight",
+    name: "Character Artwork 08",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character8,
       },
-    ]
+    ],
   },
+
   {
     id: "09",
-    name: "Character Nine",
+    name: "Character Artwork 09",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character9,
       },
-    ]
+    ],
   },
+
   {
     id: "10",
-    name: "Character Ten",
+    name: "Character Artwork 10",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character10,
       },
-    ]
+    ],
   },
+
   {
     id: "11",
-    name: "Character Eleven",
+    name: "Character Artwork 11",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character11,
       },
-    ]
+    ],
   },
+
   {
     id: "12",
-    name: "Character Twelve",
+    name: "Character Artwork 12",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character12,
       },
-    ]
+    ],
   },
+
   {
     id: "13",
-    name: "Character Thirteen",
+    name: "Character Artwork 13",
     orientation: "square",
     media: [
       {
         type: "image",
         src: character13,
       },
-    ]
+    ],
   },
+
   {
     id: "14",
-    name: "Character Fourteen",
+    name: "Character Artwork 14",
     orientation: "square",
     media: [
       {
         type: "image",
         src: character14,
       },
-    ]
+    ],
   },
+
   {
     id: "15",
-    name: "Character Fifteen",
+    name: "Character Artwork 15",
     orientation: "square",
     media: [
       {
         type: "image",
         src: character15,
       },
-    ]
+    ],
   },
 ];
 

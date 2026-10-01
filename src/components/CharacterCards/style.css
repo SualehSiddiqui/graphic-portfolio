@@ -89,9 +89,31 @@
   padding-right: 60px;
 
   cursor: grab;
+
+  will-change: transform;
+
+  user-select: none;
+
+  touch-action: pan-y;
+
+  -webkit-user-drag: none;
 }
 
-.character-track:active {
+.character-scroller {
+  width: 100%;
+
+  overflow: hidden;
+
+  padding: 15px 0 30px;
+
+  touch-action: pan-y;
+}
+
+.character-scroller.is-dragging {
+  cursor: grabbing;
+}
+
+.character-scroller.is-dragging .character-track {
   cursor: grabbing;
 }
 
@@ -163,6 +185,10 @@
   object-fit: cover;
 
   pointer-events: none;
+
+  user-select: none;
+
+  -webkit-user-drag: none;
 }
 
 .media-type {

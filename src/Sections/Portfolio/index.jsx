@@ -193,9 +193,9 @@ export default function PortfolioPreview() {
                                     {work.id}
                                 </span>
 
-                                <div className="portfolio-secondary-hover">
+                                <Link to={work.link} className="portfolio-secondary-hover">
                                     <ArrowUpRight size={20} />
-                                </div>
+                                </Link>
                             </div>
 
                             <div className="portfolio-secondary-info">

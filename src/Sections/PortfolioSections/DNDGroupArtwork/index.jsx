@@ -19,11 +19,10 @@ import character12a from "../../../assets/DNDGroupArtwork/set12img1.avif";
 import character13a from "../../../assets/DNDGroupArtwork/set13img1.avif";
 import character14a from "../../../assets/DNDGroupArtwork/set14img1.avif";
 
-
 const characters = [
   {
     id: "01",
-    name: "Character One",
+    name: "D&D Group Artwork 01",
     orientation: "landscape",
     media: [
       {
@@ -34,11 +33,12 @@ const characters = [
         type: "image",
         src: character1b,
       },
-    ]
+    ],
   },
+
   {
     id: "02",
-    name: "Character Two",
+    name: "D&D Group Artwork 02",
     orientation: "landscape",
     media: [
       {
@@ -49,11 +49,12 @@ const characters = [
         type: "image",
         src: character2b,
       },
-    ]
+    ],
   },
+
   {
     id: "03",
-    name: "Character Three",
+    name: "D&D Group Artwork 03",
     orientation: "landscape",
     media: [
       {
@@ -64,130 +65,142 @@ const characters = [
         type: "image",
         src: character3b,
       },
-    ]
+    ],
   },
+
   {
     id: "04",
-    name: "Character Four",
+    name: "D&D Group Artwork 04",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character4a,
       },
-    ]
+    ],
   },
+
   {
     id: "05",
-    name: "Character Five",
+    name: "D&D Group Artwork 05",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character5a,
       },
-    ]
+    ],
   },
+
   {
     id: "06",
-    name: "Character Six",
+    name: "D&D Group Artwork 06",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character6a,
       },
-    ]
+    ],
   },
+
   {
     id: "07",
-    name: "Character Seven",
+    name: "D&D Group Artwork 07",
     orientation: "square",
     media: [
       {
         type: "image",
         src: character7a,
       },
-    ]
+    ],
   },
+
   {
     id: "08",
-    name: "Character Eight",
+    name: "D&D Group Artwork 08",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character8a,
       },
-    ]
+    ],
   },
+
   {
     id: "09",
-    name: "Character Nine",
+    name: "D&D Group Artwork 09",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character9a,
       },
-    ]
+    ],
   },
+
   {
     id: "10",
-    name: "Character Ten",
+    name: "D&D Group Artwork 10",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character10a,
       },
-    ]
+    ],
   },
+
   {
     id: "11",
-    name: "Character Eleven",
+    name: "D&D Group Artwork 11",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character11a,
       },
-    ]
+    ],
   },
+
   {
     id: "12",
-    name: "Character Twelve",
+    name: "D&D Group Artwork 12",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character12a,
       },
-    ]
+    ],
   },
+
   {
     id: "13",
-    name: "Character Thirteen",
+    name: "D&D Group Artwork 13",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character13a,
       },
-    ]
+    ],
   },
+
   {
     id: "14",
-    name: "Character Fourteen",
+    name: "D&D Group Artwork 14",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character14a,
       },
-    ]
+    ],
   },
 ];
+
 
 const DNDGroupArtwork = () => {
   return (

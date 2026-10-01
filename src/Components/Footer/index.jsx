@@ -180,6 +180,7 @@ export default function Footer() {
                             <Link
                                 key={index}
                                 to={social.url}
+                                target="_blank"
                                 className="social-link"
                                 aria-label={social.name}
                             >

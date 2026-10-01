@@ -39,7 +39,7 @@ import character18 from "../../../assets/Models/set18video1.mp4";
 const characters = [
   {
     id: "01",
-    name: "Character One",
+    name: "3D Artwork 01",
     orientation: "portrait",
     media: [
       {
@@ -50,11 +50,12 @@ const characters = [
         type: "video",
         src: character1b,
       },
-    ]
+    ],
   },
+
   {
     id: "02",
-    name: "Character Two",
+    name: "3D Artwork 02",
     orientation: "portrait",
     media: [
       {
@@ -65,11 +66,12 @@ const characters = [
         type: "video",
         src: character2b,
       },
-    ]
+    ],
   },
+
   {
     id: "03",
-    name: "Character Three",
+    name: "3D Artwork 03",
     orientation: "portrait",
     media: [
       {
@@ -88,11 +90,12 @@ const characters = [
         type: "video",
         src: character3d,
       },
-    ]
+    ],
   },
+
   {
     id: "04",
-    name: "Character Four",
+    name: "3D Artwork 04",
     orientation: "portrait",
     media: [
       {
@@ -111,22 +114,24 @@ const characters = [
         type: "video",
         src: character4d,
       },
-    ]
+    ],
   },
+
   {
     id: "05",
-    name: "Character Five",
+    name: "3D Artwork 05",
     orientation: "portrait",
     media: [
       {
         type: "video",
         src: character5,
       },
-    ]
+    ],
   },
+
   {
     id: "06",
-    name: "Character Six",
+    name: "3D Artwork 06",
     orientation: "portrait",
     media: [
       {
@@ -137,22 +142,24 @@ const characters = [
         type: "video",
         src: character6b,
       },
-    ]
+    ],
   },
+
   {
     id: "07",
-    name: "Character Seven",
+    name: "3D Artwork 07",
     orientation: "square",
     media: [
       {
         type: "image",
         src: character7,
       },
-    ]
+    ],
   },
+
   {
     id: "08",
-    name: "Character Eight",
+    name: "3D Artwork 08",
     orientation: "square",
     media: [
       {
@@ -167,11 +174,12 @@ const characters = [
         type: "image",
         src: character8c,
       },
-    ]
+    ],
   },
+
   {
     id: "09",
-    name: "Character Nine",
+    name: "3D Artwork 09",
     orientation: "square",
     media: [
       {
@@ -182,11 +190,12 @@ const characters = [
         type: "video",
         src: character9b,
       },
-    ]
+    ],
   },
+
   {
     id: "10",
-    name: "Character Ten",
+    name: "3D Artwork 10",
     orientation: "square",
     media: [
       {
@@ -201,66 +210,72 @@ const characters = [
         type: "video",
         src: character10c,
       },
-    ]
+    ],
   },
+
   {
     id: "11",
-    name: "Character Eleven",
+    name: "3D Artwork 11",
     orientation: "landscape",
     media: [
       {
         type: "video",
         src: character11,
       },
-    ]
+    ],
   },
+
   {
     id: "12",
-    name: "Character Twelve",
+    name: "3D Artwork 12",
     orientation: "landscape",
     media: [
       {
         type: "video",
         src: character12,
       },
-    ]
+    ],
   },
+
   {
     id: "13",
-    name: "Character Thirteen",
+    name: "3D Artwork 13",
     orientation: "landscape",
     media: [
       {
         type: "video",
         src: character13,
       },
-    ]
+    ],
   },
+
   {
     id: "14",
-    name: "Character Fourteen",
+    name: "3D Artwork 14",
     orientation: "square",
     media: [
       {
         type: "video",
         src: character14,
       },
-    ]
+    ],
   },
+
   {
     id: "15",
-    name: "Character Fifteen",
+    name: "3D Artwork 15",
     orientation: "portrait",
     media: [
       {
         type: "video",
         src: character15,
       },
-    ]
+    ],
   },
+
   {
     id: "16",
-    name: "Character Sixteen",
+    name: "3D Artwork 16",
     orientation: "square",
     media: [
       {
@@ -271,11 +286,12 @@ const characters = [
         type: "video",
         src: character16b,
       },
-    ]
+    ],
   },
+
   {
     id: "17",
-    name: "Character Seventeen",
+    name: "3D Artwork 17",
     orientation: "landscape",
     media: [
       {
@@ -290,18 +306,19 @@ const characters = [
         type: "image",
         src: character17c,
       },
-    ]
+    ],
   },
+
   {
     id: "18",
-    name: "Character Eighteen",
+    name: "3D Artwork 18",
     orientation: "landscape",
     media: [
       {
         type: "video",
         src: character18,
       },
-    ]
+    ],
   },
 ];
 

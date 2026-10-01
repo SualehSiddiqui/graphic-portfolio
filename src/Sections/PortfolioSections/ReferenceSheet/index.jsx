@@ -17,132 +17,142 @@ import character12b from "../../../assets/ReferenceSheet/character12b.avif";
 import character13 from "../../../assets/ReferenceSheet/character13.avif";
 import character14 from "../../../assets/ReferenceSheet/character14.avif";
 
-
 const characters = [
   {
     id: "01",
-    name: "Character One",
+    name: "Reference Sheet 01",
     orientation: "square",
     media: [
       {
         type: "image",
         src: character1,
       },
-    ]
+    ],
   },
+
   {
     id: "02",
-    name: "Character Two",
+    name: "Reference Sheet 02",
     orientation: "square",
     media: [
       {
         type: "image",
         src: character2,
       },
-    ]
+    ],
   },
+
   {
     id: "03",
-    name: "Character Three",
+    name: "Reference Sheet 03",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character3,
       },
-    ]
+    ],
   },
+
   {
     id: "04",
-    name: "Character Four",
+    name: "Reference Sheet 04",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character4,
       },
-    ]
+    ],
   },
+
   {
     id: "05",
-    name: "Character Five",
+    name: "Reference Sheet 05",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character5,
       },
-    ]
+    ],
   },
+
   {
     id: "06",
-    name: "Character Six",
+    name: "Reference Sheet 06",
     orientation: "landscape",
     media: [
       {
         type: "image",
-        src: character5,
+        src: character6,
       },
-    ]
+    ],
   },
+
   {
     id: "07",
-    name: "Character Seven",
+    name: "Reference Sheet 07",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character7,
       },
-    ]
+    ],
   },
+
   {
     id: "08",
-    name: "Character Eight",
+    name: "Reference Sheet 08",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character8,
       },
-    ]
+    ],
   },
+
   {
     id: "09",
-    name: "Character Nine",
+    name: "Reference Sheet 09",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character9,
       },
-    ]
+    ],
   },
+
   {
     id: "10",
-    name: "Character Ten",
+    name: "Reference Sheet 10",
     orientation: "square",
     media: [
       {
         type: "image",
         src: character10,
       },
-    ]
+    ],
   },
+
   {
     id: "11",
-    name: "Character Eleven",
+    name: "Reference Sheet 11",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character11,
       },
-    ]
+    ],
   },
+
   {
     id: "12",
-    name: "Character Twelve",
+    name: "Reference Sheet 12",
     orientation: "square",
     media: [
       {
@@ -153,29 +163,31 @@ const characters = [
         type: "image",
         src: character12b,
       },
-    ]
+    ],
   },
+
   {
     id: "13",
-    name: "Character Thirteen",
+    name: "Reference Sheet 13",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character13,
       },
-    ]
+    ],
   },
+
   {
     id: "14",
-    name: "Character Fourteen",
+    name: "Reference Sheet 14",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character14,
       },
-    ]
+    ],
   },
 ];
 

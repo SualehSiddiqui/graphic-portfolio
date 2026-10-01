@@ -15,18 +15,15 @@ function AuthLayout({ children }) {
     const [accessGranted, setAccessGranted] = useState(null);
 
     useEffect(() => {
-        // const blacklistCountries = ["PK"];
-        const blacklistCountries = [""];
+        const blacklistCountries = ["PK"];
 
         async function checkCountry() {
             try {
                 const response = await fetch("https://api.ipwho.org/me?apiKey=" + import.meta.env.VITE_API_KEY);
                 const result = await response.json();
                 if (blacklistCountries.includes(result.data.geoLocation.countryCode)) {
-                    console.log(result.data.geoLocation.countryCode)
                     setAccessGranted(false);
                 } else {
-                    console.log(result.data.geoLocation.countryCode)
                     setAccessGranted(true);
                 }
             } catch (error) {

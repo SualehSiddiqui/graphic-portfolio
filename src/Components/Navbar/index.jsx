@@ -54,6 +54,10 @@ const categories = [
         id: "twitch-package",
     },
     {
+        name: "Maps",
+        id: "maps",
+    },
+    {
         name: "VR World",
         id: "vr-world",
     },
@@ -394,139 +398,76 @@ const Navbar = () => {
                 {menuOpen && location.pathname === "/portfolio" && (
                     <>
                         {/* BACKDROP */}
-
-                        <motion.div
-                            className="menu-backdrop"
-                            initial={{
-                                opacity: 0,
-                            }}
-                            animate={{
-                                opacity: 1,
-                            }}
-                            exit={{
-                                opacity: 0,
-                            }}
-                            transition={{
-                                duration: 0.45,
-                            }}
-                            onClick={closeMenu}
-                        />
-
-
-                        {/* PANEL */}
-
                         <motion.aside
-                            className="category-panel"
+                            className="mobile-nav-panel category-panel"
                             variants={menuVariants}
                             initial="hidden"
                             animate="visible"
                             exit="exit"
                         >
+                            <div className="mobile-nav-content">
 
-                            <div className="panel-glow panel-glow-purple" />
-                            <div className="panel-glow panel-glow-pink" />
-
-                            <div className="panel-content">
-
-                                <div className="panel-header">
+                                {/* HEADER */}
+                                <div className="mobile-nav-header">
 
                                     <div>
-
-                                        <span className="panel-eyebrow">
+                                        <span className="mobile-nav-eyebrow">
                                             EXPLORE THE WORK
                                         </span>
 
-                                        <h2>
+                                        <h2 className="mobile-nav-title">
                                             Portfolio
                                             <br />
                                             Categories<span>.</span>
                                         </h2>
-
                                     </div>
 
-                                    <span className="panel-number">
-                                        08
-                                    </span>
+                                    <button
+                                        className="mobile-nav-close category-close"
+                                        aria-label="Close categories"
+                                        onClick={closeMenu}
+                                    >
+                                        <X size={19} />
+                                    </button>
 
                                 </div>
 
+                                {/* CATEGORY LINKS */}
+                                <div className="mobile-nav-links category-list">
+                                    {categories.map((category, index) => (
+                                        <motion.a
+                                            key={category.id}
+                                            href={`#${category.id}`}
+                                            className="mobile-nav-item"
+                                            custom={index}
+                                            variants={itemVariants}
+                                            initial="hidden"
+                                            animate="visible"
+                                            onClick={closeMenu}
+                                            whileHover="hover"
+                                        >
+                                            <span className="mobile-nav-index">
+                                                {String(index + 1).padStart(2, "0")}
+                                            </span>
 
-                                <div className="category-list">
+                                            <span className="mobile-nav-label">
+                                                {category.name}
+                                            </span>
 
-                                    {categories.map(
-                                        (category, index) => (
-                                            <motion.a
-                                                key={category.id}
-                                                href={`#${category.id}`}
-                                                className="category-item"
-                                                custom={index}
-                                                variants={itemVariants}
-                                                initial="hidden"
-                                                animate="visible"
-                                                onClick={closeMenu}
-                                                whileHover="hover"
-                                            >
-
-                                                <div className="category-index">
-                                                    {String(
-                                                        index + 1
-                                                    ).padStart(2, "0")}
-                                                </div>
-
-                                                <div className="category-title">
-                                                    {category.name}
-                                                </div>
-
-                                                <motion.div
-                                                    className="category-arrow-wrap"
-                                                    variants={{
-                                                        hover: {
-                                                            x: 5,
-                                                            rotate: 45,
-                                                        },
-                                                    }}
-                                                    transition={{
-                                                        duration: 0.25,
-                                                    }}
-                                                >
-                                                    <ArrowRight size={18} />
-                                                </motion.div>
-
-                                            </motion.a>
-                                        )
-                                    )}
-
+                                            <span className="mobile-nav-arrow">
+                                                <ArrowRight size={15} />
+                                            </span>
+                                        </motion.a>
+                                    ))}
                                 </div>
 
-
-                                <motion.div
-                                    className="panel-footer"
-                                    initial={{
-                                        opacity: 0,
-                                        y: 15,
-                                    }}
-                                    animate={{
-                                        opacity: 1,
-                                        y: 0,
-                                    }}
-                                    transition={{
-                                        delay: 0.65,
-                                        duration: 0.5,
-                                    }}
-                                >
-
-                                    <span>
-                                        SELECTED WORKS
-                                    </span>
-
-                                    <span>
-                                        2026 — ARTISTRY WORLD
-                                    </span>
-
-                                </motion.div>
+                                {/* FOOTER */}
+                                <div className="mobile-nav-footer">
+                                    <span>SELECTED WORKS</span>
+                                    <span>2026 — ARTISTRY WORLDS</span>
+                                </div>
 
                             </div>
-
                         </motion.aside>
 
                     </>

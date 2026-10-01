@@ -30,278 +30,302 @@ import character20 from "../../../assets/TwitchPackage/set20img1.avif";
 const characters = [
   {
     id: "01a",
-    name: "Character One",
+    name: "Twitch Package 01 — Part 01",
     orientation: "square",
     media: [
       {
         type: "image",
         src: character1a,
       },
-    ]
+    ],
   },
+
   {
     id: "01b",
-    name: "Character One",
+    name: "Twitch Package 01 — Part 02",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character1b,
       },
-    ]
+    ],
   },
+
   {
     id: "01c",
-    name: "Character One",
+    name: "Twitch Package 01 — Part 03",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character1c,
       },
-    ]
+    ],
   },
+
   {
     id: "01d",
-    name: "Character One",
+    name: "Twitch Package 01 — Part 04",
     orientation: "landscape",
     media: [
       {
         type: "video",
         src: character1d,
       },
-    ]
+    ],
   },
+
   {
     id: "02",
-    name: "Character Two",
+    name: "Twitch Package 02",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character2,
       },
-    ]
+    ],
   },
+
   {
     id: "03",
-    name: "Character Three",
+    name: "Twitch Package 03",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character3,
       },
-    ]
+    ],
   },
+
   {
     id: "04",
-    name: "Character Four",
+    name: "Twitch Package 04",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character4,
       },
-    ]
+    ],
   },
+
   {
     id: "05",
-    name: "Character Five",
+    name: "Twitch Package 05",
     orientation: "square",
     media: [
       {
         type: "image",
         src: character5,
       },
-    ]
+    ],
   },
+
   {
     id: "06",
-    name: "Character Six",
+    name: "Twitch Package 06",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character6,
       },
-    ]
+    ],
   },
+
   {
     id: "07",
-    name: "Character Seven",
+    name: "Twitch Package 07",
     orientation: "landscape",
     media: [
       {
         type: "video",
         src: character7,
       },
-    ]
+    ],
   },
+
   {
     id: "08",
-    name: "Character Eight",
+    name: "Twitch Package 08",
     orientation: "landscape",
     media: [
       {
         type: "video",
         src: character8,
       },
-    ]
+    ],
   },
+
   {
     id: "09",
-    name: "Character Nine",
+    name: "Twitch Package 09",
     orientation: "landscape",
     media: [
       {
         type: "video",
         src: character9,
       },
-    ]
+    ],
   },
+
   {
     id: "10",
-    name: "Character Ten",
+    name: "Twitch Package 10",
     orientation: "landscape",
     media: [
       {
         type: "video",
         src: character10,
       },
-    ]
+    ],
   },
+
   {
     id: "11",
-    name: "Character Eleven",
+    name: "Twitch Package 11",
     orientation: "landscape",
     media: [
       {
         type: "video",
         src: character11,
       },
-    ]
+    ],
   },
+
   {
     id: "12",
-    name: "Character Twelve",
+    name: "Twitch Package 12",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character12,
       },
-    ]
+    ],
   },
+
   {
     id: "13",
-    name: "Character Thirteen",
+    name: "Twitch Package 13",
     orientation: "square",
     media: [
       {
         type: "image",
         src: character13,
       },
-    ]
+    ],
   },
+
   {
     id: "14",
-    name: "Character Fourteen",
+    name: "Twitch Package 14",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character14,
       },
-    ]
+    ],
   },
+
   {
     id: "15",
-    name: "Character Fifteen",
+    name: "Twitch Package 15",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character15,
       },
-    ]
+    ],
   },
+
   {
     id: "16",
-    name: "Character Sixteen",
+    name: "Twitch Package 16",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character16,
       },
-    ]
+    ],
   },
+
   {
     id: "17",
-    name: "Character Seventeen",
+    name: "Twitch Package 17",
     orientation: "square",
     media: [
       {
         type: "image",
         src: character17,
       },
-    ]
+    ],
   },
+
   {
-    id: "18",
-    name: "Character Eighteen",
+    id: "18a",
+    name: "Twitch Package 18 — Part 01",
     orientation: "square",
     media: [
       {
         type: "image",
         src: character18a,
       },
-    ]
+    ],
   },
+
   {
-    id: "18",
-    name: "Character Eighteen",
+    id: "18b",
+    name: "Twitch Package 18 — Part 02",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character18b,
       },
-    ]
+    ],
   },
+
   {
-    id: "18",
-    name: "Character Eighteen",
+    id: "18c",
+    name: "Twitch Package 18 — Part 03",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character18c,
       },
-    ]
+    ],
   },
+
   {
     id: "19",
-    name: "Character Ninteen",
+    name: "Twitch Package 19",
     orientation: "landscape",
     media: [
       {
         type: "video",
         src: character19,
       },
-    ]
+    ],
   },
+
   {
     id: "20",
-    name: "Character Twenty",
+    name: "Twitch Package 20",
     orientation: "square",
     media: [
       {
         type: "video",
         src: character20,
       },
-    ]
+    ],
   },
 ];
 

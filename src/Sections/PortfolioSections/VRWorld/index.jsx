@@ -1,106 +1,97 @@
 import CharacterCards from "../../../components/CharacterCards";
 
 // Replace these paths with your actual artwork
-import character1a from "../../../assets/Maps/set1img1.avif";
-import character1b from "../../../assets/Maps/set1img2.avif";
-
-import character2a from "../../../assets/Maps/set2img1.avif";
-import character2b from "../../../assets/Maps/set2img2.avif";
-import character2c from "../../../assets/Maps/set2img3.avif";
-import character2d from "../../../assets/Maps/set2img4.avif";
-import character2e from "../../../assets/Maps/set2img5.avif";
-import character2f from "../../../assets/Maps/set2video6.mp4";
-
-
+import character1a from "../../../assets/VRWorld/set1img1.avif";
+import character1b from "../../../assets/VRWorld/set1img2.avif";
+import character1c from "../../../assets/VRWorld/set1img3.avif";
+import character1d from "../../../assets/VRWorld/set1img4.avif";
+import character1e from "../../../assets/VRWorld/set1img5.avif";
+import character1f from "../../../assets/VRWorld/set1img6.avif";
+import character1g from "../../../assets/VRWorld/set1img7.avif";
 
 const characters = [
   {
-    id: "01",
-    name: "Character One",
-    orientation: "portrait",
+    id: "01-01",
+    name: "VR World 01 — View 01",
+    orientation: "landscape",
     media: [
       {
         type: "image",
         src: character1a,
       },
-    ]
+    ],
   },
+
   {
-    id: "01",
-    name: "Character One",
-    orientation: "square",
+    id: "01-02",
+    name: "VR World 01 — View 02",
+    orientation: "landscape",
     media: [
       {
         type: "image",
         src: character1b,
       },
-    ]
+    ],
   },
+
   {
-    id: "02",
-    name: "Character Two",
+    id: "01-03",
+    name: "VR World 01 — View 03",
     orientation: "landscape",
     media: [
       {
         type: "image",
-        src: character2a,
+        src: character1c,
       },
-    ]
+    ],
   },
+
   {
-    id: "02",
-    name: "Character Two",
-    orientation: "square",
-    media: [
-      {
-        type: "image",
-        src: character2b,
-      },
-    ]
-  },
-  {
-    id: "02",
-    name: "Character Two",
+    id: "01-04",
+    name: "VR World 01 — View 04",
     orientation: "landscape",
     media: [
       {
         type: "image",
-        src: character2c,
+        src: character1d,
       },
-    ]
+    ],
   },
+
   {
-    id: "02",
-    name: "Character Two",
+    id: "01-05",
+    name: "VR World 01 — View 05",
     orientation: "landscape",
     media: [
       {
         type: "image",
-        src: character2d,
+        src: character1e,
       },
-    ]
+    ],
   },
+
   {
-    id: "02",
-    name: "Character Two",
+    id: "01-06",
+    name: "VR World 01 — View 06",
     orientation: "landscape",
     media: [
       {
         type: "image",
-        src: character2e,
+        src: character1f,
       },
-    ]
+    ],
   },
+
   {
-    id: "02",
-    name: "Character Two",
+    id: "01-07",
+    name: "VR World 01 — View 07",
     orientation: "landscape",
     media: [
       {
-        type: "video",
-        src: character2f,
+        type: "image",
+        src: character1g,
       },
-    ]
+    ],
   },
 ];
 
@@ -108,7 +99,7 @@ const VRWorld = () => {
   return (
     <CharacterCards
       characters={characters}
-      num={"11"}
+      num={"12"}
       heading={<h2>VR <span>World.</span></h2>}
       id={"vr-world"}
     />

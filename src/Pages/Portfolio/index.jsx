@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
     CharacterArtwork, DNDGroupArtwork, DNDCharacterSheet, LandscapeArtScenes,
     LogoAndBanner, Models, PrintableModel, ReferenceSheet, TwitchPackage,
@@ -6,12 +7,15 @@ import {
 } from "../../Sections";
 import {
     Hero,
-    Footer
+    Footer,
+    ScrollToTheSection
 } from "../../components";
 
 function Portfolio() {
+
     return (
         <>
+            <ScrollToTheSection />
             <Hero />
             <CharacterArtwork />
             <DNDGroupArtwork />
@@ -24,7 +28,7 @@ function Portfolio() {
             <ReferenceSheet />
             <TwitchPackage />
             <Maps />
-            {/* <VRWorld /> */}
+            <VRWorld />
             <OCDesign />
             <Footer />
         </>

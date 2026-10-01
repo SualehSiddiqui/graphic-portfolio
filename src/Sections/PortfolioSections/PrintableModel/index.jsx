@@ -59,7 +59,7 @@ import character14d from "../../../assets/PrintableModel/set14img4.avif";
 const characters = [
   {
     id: "01",
-    name: "Character One",
+    name: "Printable Model 01",
     orientation: "landscape",
     media: [
       {
@@ -74,11 +74,12 @@ const characters = [
         type: "image",
         src: character1c,
       },
-    ]
+    ],
   },
+
   {
     id: "02",
-    name: "Character Two",
+    name: "Printable Model 02",
     orientation: "landscape",
     media: [
       {
@@ -97,11 +98,12 @@ const characters = [
         type: "image",
         src: character2d,
       },
-    ]
+    ],
   },
+
   {
     id: "03",
-    name: "Character Three",
+    name: "Printable Model 03",
     orientation: "landscape",
     media: [
       {
@@ -120,11 +122,12 @@ const characters = [
         type: "image",
         src: character3d,
       },
-    ]
+    ],
   },
+
   {
     id: "04",
-    name: "Character Four",
+    name: "Printable Model 04",
     orientation: "landscape",
     media: [
       {
@@ -139,11 +142,12 @@ const characters = [
         type: "image",
         src: character4c,
       },
-    ]
+    ],
   },
+
   {
     id: "05",
-    name: "Character Five",
+    name: "Printable Model 05",
     orientation: "landscape",
     media: [
       {
@@ -170,11 +174,12 @@ const characters = [
         type: "image",
         src: character5f,
       },
-    ]
+    ],
   },
+
   {
     id: "06",
-    name: "Character Six",
+    name: "Printable Model 06",
     orientation: "landscape",
     media: [
       {
@@ -189,11 +194,12 @@ const characters = [
         type: "image",
         src: character6c,
       },
-    ]
+    ],
   },
+
   {
     id: "07",
-    name: "Character Seven",
+    name: "Printable Model 07",
     orientation: "landscape",
     media: [
       {
@@ -208,11 +214,12 @@ const characters = [
         type: "image",
         src: character7c,
       },
-    ]
+    ],
   },
+
   {
     id: "08",
-    name: "Character Eight",
+    name: "Printable Model 08",
     orientation: "landscape",
     media: [
       {
@@ -231,11 +238,12 @@ const characters = [
         type: "image",
         src: character8d,
       },
-    ]
+    ],
   },
+
   {
     id: "09",
-    name: "Character Nine",
+    name: "Printable Model 09",
     orientation: "landscape",
     media: [
       {
@@ -254,11 +262,12 @@ const characters = [
         type: "image",
         src: character9d,
       },
-    ]
+    ],
   },
+
   {
     id: "10",
-    name: "Character Ten",
+    name: "Printable Model 10",
     orientation: "landscape",
     media: [
       {
@@ -273,11 +282,12 @@ const characters = [
         type: "image",
         src: character10c,
       },
-    ]
+    ],
   },
+
   {
     id: "11",
-    name: "Character Eleven",
+    name: "Printable Model 11",
     orientation: "landscape",
     media: [
       {
@@ -304,11 +314,12 @@ const characters = [
         type: "image",
         src: character11f,
       },
-    ]
+    ],
   },
+
   {
     id: "12",
-    name: "Character Twelve",
+    name: "Printable Model 12",
     orientation: "landscape",
     media: [
       {
@@ -323,11 +334,12 @@ const characters = [
         type: "image",
         src: character12c,
       },
-    ]
+    ],
   },
+
   {
     id: "13",
-    name: "Character Thirteen",
+    name: "Printable Model 13",
     orientation: "landscape",
     media: [
       {
@@ -342,11 +354,12 @@ const characters = [
         type: "image",
         src: character13c,
       },
-    ]
+    ],
   },
+
   {
     id: "14",
-    name: "Character Fourteen",
+    name: "Printable Model 14",
     orientation: "landscape",
     media: [
       {
@@ -365,7 +378,7 @@ const characters = [
         type: "image",
         src: character14d,
       },
-    ]
+    ],
   },
 ];
 

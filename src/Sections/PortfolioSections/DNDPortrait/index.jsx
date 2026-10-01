@@ -51,22 +51,22 @@ import character41 from "../../../assets/DNDPortrait/set41img1.avif";
 import character42 from "../../../assets/DNDPortrait/set42img1.avif";
 import character43 from "../../../assets/DNDPortrait/set43img1.avif";
 
-
 const characters = [
   {
     id: "01",
-    name: "Character One",
+    name: "D&D Portrait 01",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character1,
       },
-    ]
+    ],
   },
+
   {
     id: "02",
-    name: "Character Two",
+    name: "D&D Portrait 02",
     orientation: "portrait",
     media: [
       {
@@ -85,11 +85,12 @@ const characters = [
         type: "image",
         src: character2d,
       },
-    ]
+    ],
   },
+
   {
     id: "03",
-    name: "Character Three",
+    name: "D&D Portrait 03",
     orientation: "portrait",
     media: [
       {
@@ -108,450 +109,489 @@ const characters = [
         type: "image",
         src: character3d,
       },
-    ]
+    ],
   },
+
   {
     id: "04",
-    name: "Character Four",
+    name: "D&D Portrait 04",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character4,
       },
-    ]
+    ],
   },
+
   {
     id: "05",
-    name: "Character Five",
+    name: "D&D Portrait 05",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character5,
       },
-    ]
+    ],
   },
+
   {
     id: "06",
-    name: "Character Six",
+    name: "D&D Portrait 06",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character6,
       },
-    ]
+    ],
   },
+
   {
     id: "07",
-    name: "Character Seven",
+    name: "D&D Portrait 07",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character7,
       },
-    ]
+    ],
   },
+
   {
     id: "08",
-    name: "Character Eight",
+    name: "D&D Portrait 08",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character8,
       },
-    ]
+    ],
   },
+
   {
     id: "09",
-    name: "Character Nine",
+    name: "D&D Portrait 09",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character9,
       },
-    ]
+    ],
   },
+
   {
     id: "10",
-    name: "Character Ten",
+    name: "D&D Portrait 10",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character10,
       },
-    ]
+    ],
   },
+
   {
     id: "11",
-    name: "Character Eleven",
+    name: "D&D Portrait 11",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character11,
       },
-    ]
+    ],
   },
+
   {
     id: "12",
-    name: "Character Twelve",
+    name: "D&D Portrait 12",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character12,
       },
-    ]
+    ],
   },
+
   {
     id: "13",
-    name: "Character Thirteen",
+    name: "D&D Portrait 13",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character13,
       },
-    ]
+    ],
   },
+
   {
     id: "14",
-    name: "Character Fourteen",
+    name: "D&D Portrait 14",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character14,
       },
-    ]
+    ],
   },
+
   {
     id: "15",
-    name: "Character Fifteen",
+    name: "D&D Portrait 15",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character15,
       },
-    ]
+    ],
   },
+
   {
     id: "16",
-    name: "Character Sixteen",
+    name: "D&D Portrait 16",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character16,
       },
-    ]
+    ],
   },
+
   {
     id: "17",
-    name: "Character Seventeen",
+    name: "D&D Portrait 17",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character17,
       },
-    ]
+    ],
   },
+
   {
     id: "18",
-    name: "Character Eighteen",
+    name: "D&D Portrait 18",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character18,
       },
-    ]
+    ],
   },
+
   {
     id: "19",
-    name: "Character Nineteen",
+    name: "D&D Portrait 19",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character19,
       },
-    ]
+    ],
   },
+
   {
     id: "20",
-    name: "Character Twenty",
+    name: "D&D Portrait 20",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character20,
       },
-    ]
+    ],
   },
+
   {
     id: "21",
-    name: "Character Twenty One",
+    name: "D&D Portrait 21",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character21,
       },
-    ]
+    ],
   },
+
   {
     id: "22",
-    name: "Character Twenty Two",
+    name: "D&D Portrait 22",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character22,
       },
-    ]
+    ],
   },
+
   {
     id: "23",
-    name: "Character Twenty Three",
+    name: "D&D Portrait 23",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character23,
       },
-    ]
+    ],
   },
+
   {
     id: "24",
-    name: "Character Twenty Four",
+    name: "D&D Portrait 24",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character24,
       },
-    ]
+    ],
   },
+
   {
     id: "25",
-    name: "Character Twenty Five",
+    name: "D&D Portrait 25",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character25,
       },
-    ]
+    ],
   },
+
   {
     id: "26",
-    name: "Character Twenty Six",
+    name: "D&D Portrait 26",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character26,
       },
-    ]
+    ],
   },
+
   {
     id: "27",
-    name: "Character Twenty Seven",
+    name: "D&D Portrait 27",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character27,
       },
-    ]
+    ],
   },
+
   {
     id: "28",
-    name: "Character Twenty Eight",
+    name: "D&D Portrait 28",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character28,
       },
-    ]
+    ],
   },
+
   {
     id: "29",
-    name: "Character Twenty Nine",
+    name: "D&D Portrait 29",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character29,
       },
-    ]
+    ],
   },
+
   {
     id: "30",
-    name: "Character Thirty",
+    name: "D&D Portrait 30",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character30,
       },
-    ]
+    ],
   },
+
   {
     id: "31",
-    name: "Character Thirty One",
+    name: "D&D Portrait 31",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character31,
       },
-    ]
+    ],
   },
+
   {
     id: "32",
-    name: "Character Thirty Two",
+    name: "D&D Portrait 32",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character32,
       },
-    ]
+    ],
   },
+
   {
     id: "33",
-    name: "Character Thirty Three",
+    name: "D&D Portrait 33",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character33,
       },
-    ]
+    ],
   },
+
   {
     id: "34",
-    name: "Character Thirty Four",
+    name: "D&D Portrait 34",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character34,
       },
-    ]
+    ],
   },
+
   {
     id: "35",
-    name: "Character Thirty Five",
+    name: "D&D Portrait 35",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character35,
       },
-    ]
+    ],
   },
+
   {
     id: "36",
-    name: "Character Thirty Six",
+    name: "D&D Portrait 36",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character36,
       },
-    ]
+    ],
   },
+
   {
     id: "37",
-    name: "Character Thirty Seven",
+    name: "D&D Portrait 37",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character37,
       },
-    ]
+    ],
   },
+
   {
     id: "38",
-    name: "Character Thirty Eight",
+    name: "D&D Portrait 38",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character38,
       },
-    ]
+    ],
   },
+
   {
     id: "39",
-    name: "Character Thirty Nine",
+    name: "D&D Portrait 39",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character39,
       },
-    ]
+    ],
   },
+
   {
     id: "40",
-    name: "Character Forty",
+    name: "D&D Portrait 40",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character40,
       },
-    ]
+    ],
   },
+
   {
     id: "41",
-    name: "Character Forty One",
+    name: "D&D Portrait 41",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character41,
       },
-    ]
+    ],
   },
+
   {
     id: "42",
-    name: "Character Forty Two",
+    name: "D&D Portrait 42",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character42,
       },
-    ]
+    ],
   },
+
   {
     id: "43",
-    name: "Character Forty Three",
+    name: "D&D Portrait 43",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character43,
       },
-    ]
+    ],
   },
 ];
-
 
 const DNDPortrait = () => {
   return (

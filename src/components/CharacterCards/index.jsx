@@ -1,5 +1,10 @@
 import { useRef, useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useMotionValue,
+  useAnimationFrame,
+} from "framer-motion";
 import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import "./style.css";
 
@@ -198,34 +203,175 @@ const CharacterCardsComponent = ({ characters, num, heading, id }) => {
   const scrollerRef = useRef(null);
   const trackRef = useRef(null);
 
-  const [dragLimit, setDragLimit] = useState(0);
+  const x = useMotionValue(0);
+
+  const [loopWidth, setLoopWidth] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+
+  const dragState = useRef({
+    pointerId: null,
+    startX: 0,
+    lastX: 0,
+  });
+
+  /* =========================================================
+     CALCULATE WIDTH OF ONE COMPLETE SET
+  ========================================================= */
 
   useEffect(() => {
-    const calculateDragLimit = () => {
-      if (!scrollerRef.current || !trackRef.current) return;
+    const calculateWidth = () => {
+      if (!trackRef.current) return;
 
-      const scrollerWidth = scrollerRef.current.offsetWidth;
-      const trackWidth = trackRef.current.scrollWidth;
+      // We render the characters twice.
+      // Therefore half of the total width = one complete set.
+      const width = trackRef.current.scrollWidth / 2;
 
-      const maxDrag = Math.max(
-        0,
-        trackWidth - scrollerWidth
-      );
-
-      setDragLimit(maxDrag);
+      setLoopWidth(width);
     };
 
-    calculateDragLimit();
+    calculateWidth();
 
-    window.addEventListener("resize", calculateDragLimit);
+    const resizeObserver = new ResizeObserver(calculateWidth);
+
+    if (trackRef.current) {
+      resizeObserver.observe(trackRef.current);
+    }
+
+    window.addEventListener("resize", calculateWidth);
 
     return () => {
-      window.removeEventListener(
-        "resize",
-        calculateDragLimit
-      );
+      resizeObserver.disconnect();
+      window.removeEventListener("resize", calculateWidth);
     };
   }, [characters]);
+
+  /* =========================================================
+     INFINITE AUTO SCROLL
+  ========================================================= */
+
+  useAnimationFrame((_, delta) => {
+    if (isDragging || !loopWidth) return;
+
+    const currentX = x.get();
+
+    // Speed in pixels per second
+    const speed = 50;
+
+    let nextX = currentX - (speed * delta) / 1000;
+
+    // Seamlessly loop back to the beginning
+    if (nextX <= -loopWidth) {
+      nextX += loopWidth;
+    }
+
+    x.set(nextX);
+  });
+
+  /* =========================================================
+     NORMALIZE POSITION FOR INFINITE LOOP
+  ========================================================= */
+
+  const normalizeX = (value) => {
+    if (!loopWidth) return value;
+
+    let normalized = value;
+
+    while (normalized <= -loopWidth) {
+      normalized += loopWidth;
+    }
+
+    while (normalized > 0) {
+      normalized -= loopWidth;
+    }
+
+    return normalized;
+  };
+
+  /* =========================================================
+     POINTER DOWN
+  ========================================================= */
+
+  const handlePointerDown = (event) => {
+    /*
+      Don't hijack clicks on buttons.
+
+      This is important because your cards contain:
+      - Previous button
+      - Next button
+      - Media dots
+    */
+    if (event.target.closest("button")) {
+      return;
+    }
+
+    dragState.current.pointerId = event.pointerId;
+    dragState.current.startX = event.clientX;
+    dragState.current.lastX = event.clientX;
+
+    setIsDragging(true);
+
+    event.currentTarget.setPointerCapture(event.pointerId);
+  };
+
+  /* =========================================================
+     POINTER MOVE
+  ========================================================= */
+
+  const handlePointerMove = (event) => {
+    if (
+      !isDragging ||
+      dragState.current.pointerId !== event.pointerId
+    ) {
+      return;
+    }
+
+    const currentX = event.clientX;
+    const delta = currentX - dragState.current.lastX;
+
+    dragState.current.lastX = currentX;
+
+    const nextX = normalizeX(x.get() + delta);
+
+    x.set(nextX);
+  };
+
+  /* =========================================================
+     POINTER UP
+  ========================================================= */
+
+  const handlePointerUp = (event) => {
+    if (dragState.current.pointerId !== event.pointerId) {
+      return;
+    }
+
+    setIsDragging(false);
+
+    dragState.current.pointerId = null;
+    dragState.current.startX = 0;
+    dragState.current.lastX = 0;
+
+    try {
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    } catch {
+      // Pointer capture may already have been released.
+    }
+  };
+
+  /* =========================================================
+     POINTER CANCEL
+  ========================================================= */
+
+  const handlePointerCancel = (event) => {
+    if (dragState.current.pointerId !== event.pointerId) {
+      return;
+    }
+
+    setIsDragging(false);
+
+    dragState.current.pointerId = null;
+    dragState.current.startX = 0;
+    dragState.current.lastX = 0;
+  };
 
   return (
     <section className="character-section" id="work">
@@ -253,26 +399,41 @@ const CharacterCardsComponent = ({ characters, num, heading, id }) => {
 
       {/* SCROLLER */}
       <div
-        className="character-scroller"
+        className={`character-scroller ${isDragging ? "is-dragging" : ""
+          }`}
         ref={scrollerRef}
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerUp}
+        onPointerCancel={handlePointerCancel}
       >
         <motion.div
           ref={trackRef}
           className="character-track"
-          drag="x"
-          dragConstraints={{
-            left: -dragLimit,
-            right: 0,
-          }}
-          dragElastic={0.08}
-          dragTransition={{
-            bounceStiffness: 200,
-            bounceDamping: 20,
+          style={{
+            x,
           }}
         >
+          {/* =================================================
+              FIRST SET
+          ================================================= */}
+
           {characters.map((character, index) => (
             <CharacterCard
-              key={id + character.id}
+              key={`first-${id}-${character.id}`}
+              character={character}
+              index={index}
+            />
+          ))}
+
+          {/* =================================================
+              DUPLICATE SET
+              Creates seamless infinite scrolling
+          ================================================= */}
+
+          {characters.map((character, index) => (
+            <CharacterCard
+              key={`second-${id}-${character.id}`}
               character={character}
               index={index}
             />
@@ -288,7 +449,11 @@ const CharacterCardsComponent = ({ characters, num, heading, id }) => {
         viewport={{ once: true }}
         transition={{ delay: 0.4 }}
       >
-        <span>← DRAG TO EXPLORE</span>
+        <span>
+          {isDragging
+            ? "↔ DRAG TO EXPLORE"
+            : "← DRAG TO EXPLORE →"}
+        </span>
 
         <div className="character-progress">
           <motion.div

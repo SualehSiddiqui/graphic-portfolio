@@ -27,66 +27,70 @@ import character20 from "../../../assets/LandscapeArtScenes/character20.avif";
 import character21 from "../../../assets/LandscapeArtScenes/character21.avif";
 import character22 from "../../../assets/LandscapeArtScenes/character22.avif";
 
-
 const characters = [
   {
     id: "01",
-    name: "Character One",
+    name: "Landscape Scene 01",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character1,
       },
-    ]
+    ],
   },
+
   {
     id: "02",
-    name: "Character Two",
+    name: "Landscape Scene 02",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character2,
       },
-    ]
+    ],
   },
+
   {
     id: "03",
-    name: "Character Three",
+    name: "Landscape Scene 03",
     orientation: "square",
     media: [
       {
         type: "image",
         src: character3,
       },
-    ]
+    ],
   },
+
   {
     id: "04",
-    name: "Character Four",
+    name: "Landscape Scene 04",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character4,
       },
-    ]
+    ],
   },
+
   {
     id: "05",
-    name: "Character Five",
+    name: "Landscape Scene 05",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character5,
       },
-    ]
+    ],
   },
+
   {
     id: "06",
-    name: "Character Six",
+    name: "Landscape Scene 06",
     orientation: "landscape",
     media: [
       {
@@ -97,33 +101,36 @@ const characters = [
         type: "image",
         src: character6b,
       },
-    ]
+    ],
   },
+
   {
     id: "07",
-    name: "Character Seven",
+    name: "Landscape Scene 07",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character7,
       },
-    ]
+    ],
   },
+
   {
     id: "08",
-    name: "Character Eight",
+    name: "Landscape Scene 08",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character8,
       },
-    ]
+    ],
   },
+
   {
     id: "09",
-    name: "Character Nine",
+    name: "Landscape Scene 09",
     orientation: "landscape",
     media: [
       {
@@ -134,161 +141,175 @@ const characters = [
         type: "image",
         src: character9b,
       },
-    ]
+    ],
   },
+
   {
     id: "10",
-    name: "Character Ten",
+    name: "Landscape Scene 10",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character10,
       },
-    ]
+    ],
   },
+
   {
     id: "11",
-    name: "Character Eleven",
+    name: "Landscape Scene 11",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character11,
       },
-    ]
+    ],
   },
+
   {
     id: "12",
-    name: "Character Twelve",
+    name: "Landscape Scene 12",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character12,
       },
-    ]
+    ],
   },
+
   {
     id: "13",
-    name: "Character Thirteen",
+    name: "Landscape Scene 13",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character13,
       },
-    ]
+    ],
   },
+
   {
     id: "14",
-    name: "Character Fourteen",
+    name: "Landscape Scene 14",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character14,
       },
-    ]
+    ],
   },
+
   {
     id: "15",
-    name: "Character Fifteen",
+    name: "Landscape Scene 15",
     orientation: "square",
     media: [
       {
         type: "image",
         src: character15,
       },
-    ]
+    ],
   },
+
   {
     id: "16",
-    name: "Character Sixteen",
+    name: "Landscape Scene 16",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character16,
       },
-    ]
+    ],
   },
+
   {
     id: "17",
-    name: "Character Seventeen",
+    name: "Landscape Scene 17",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character17,
       },
-    ]
+    ],
   },
+
   {
     id: "18",
-    name: "Character Eighteen",
+    name: "Landscape Scene 18",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character18,
       },
-    ]
+    ],
   },
+
   {
-    id: "19",
-    name: "Character Ninteen",
+    id: "19-01",
+    name: "Landscape Scene 19 — View 01",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character19a,
       },
-    ]
+    ],
   },
+
   {
-    id: "19",
-    name: "Character Ninteen",
+    id: "19-02",
+    name: "Landscape Scene 19 — View 02",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character19b,
       },
-    ]
+    ],
   },
+
   {
     id: "20",
-    name: "Character Twenteen",
+    name: "Landscape Scene 20",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character20,
       },
-    ]
+    ],
   },
+
   {
     id: "21",
-    name: "Character Twenty One",
+    name: "Landscape Scene 21",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character21,
       },
-    ]
+    ],
   },
+
   {
     id: "22",
-    name: "Character Twenty Two",
+    name: "Landscape Scene 22",
     orientation: "landscape",
     media: [
       {
         type: "image",
         src: character22,
       },
-    ]
+    ],
   },
 ];
 

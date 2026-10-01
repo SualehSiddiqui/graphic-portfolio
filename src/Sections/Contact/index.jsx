@@ -8,31 +8,36 @@ import {
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const socials = [
     {
         name: "EMAIL",
         value: "info@artistryworlds.com",
         icon: Mail,
-        href: "mailto:info@artistryworlds.com",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=info@artistryworlds.com",
+        target: "_blank"
     },
-    {
-        name: "DISCORD",
-        value: "Join our community",
-        icon: MessageCircle,
-        href: "#",
-    },
+    // {
+    //     name: "DISCORD",
+    //     value: "Join our community",
+    //     icon: MessageCircle,
+    //     href: "#",
+    //     target: ""
+    // },
     {
         name: "INSTAGRAM",
         value: "@artistryworldss",
         icon: FaInstagram,
         href: "https://www.instagram.com/artistryworldss",
+        target: "_blank",
     },
     {
         name: "X / TWITTER",
         value: "@artistryworlds",
         icon: FaXTwitter,
         href: "https://x.com/artistryworlds",
+        target: "_blank",
     },
 ];
 
@@ -83,7 +88,8 @@ export default function Contact() {
                         </h2>
 
                         <p>
-                            Tell us what you want to create, and share your vision with us. From the first idea to the final artwork, we'll work with you to bring it to life.
+                            Tell us what you want to create, and share your vision with us. From the first
+                            idea to the final artwork, we'll work with you to bring it to life.
                         </p>
                     </div>
 
@@ -95,9 +101,10 @@ export default function Contact() {
                             const Icon = social.icon;
 
                             return (
-                                <motion.a
+                                <Link
                                     key={social.name}
-                                    href={social.href}
+                                    to={social.href}
+                                    target={social.target}
                                     className="contact-link"
                                     initial={{ opacity: 0, x: 25 }}
                                     whileInView={{
@@ -141,7 +148,7 @@ export default function Contact() {
                                     >
                                         <ArrowUpRight size={20} />
                                     </motion.div>
-                                </motion.a>
+                                </Link>
                             );
                         })}
 

@@ -45,7 +45,7 @@ const reveal = {
 
 export default function PaymentMethods() {
     return (
-        <section className="payment-section">
+        <section className="payment-section" id="payment-methods">
 
             <div className="payment-bg-number">07</div>
 

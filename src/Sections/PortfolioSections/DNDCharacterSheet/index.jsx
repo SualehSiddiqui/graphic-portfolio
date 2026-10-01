@@ -15,7 +15,7 @@ import character2g from "../../../assets/DNDCharacterSheet/set2img7.avif";
 const characters = [
   {
     id: "01",
-    name: "Character One",
+    name: "D&D Character 01 — View 01",
     orientation: "portrait",
     media: [
       {
@@ -26,95 +26,103 @@ const characters = [
         type: "image",
         src: character1b,
       },
-    ]
+    ],
   },
+
   {
-    id: "01",
-    name: "Character One",
+    id: "01-02",
+    name: "D&D Character 01 — View 02",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character1b,
       },
-    ]
+    ],
   },
+
   {
-    id: "02",
-    name: "Character Two",
+    id: "02-01",
+    name: "D&D Character 02 — View 01",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character2a,
       },
-    ]
+    ],
   },
+
   {
-    id: "02",
-    name: "Character Two",
+    id: "02-02",
+    name: "D&D Character 02 — View 02",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character2b,
       },
-    ]
+    ],
   },
+
   {
-    id: "02",
-    name: "Character Two",
+    id: "02-03",
+    name: "D&D Character 02 — View 03",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character2c,
       },
-    ]
+    ],
   },
+
   {
-    id: "02",
-    name: "Character Two",
+    id: "02-04",
+    name: "D&D Character 02 — View 04",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character2d,
       },
-    ]
+    ],
   },
+
   {
-    id: "02",
-    name: "Character Two",
+    id: "02-05",
+    name: "D&D Character 02 — View 05",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character2e,
       },
-    ]
+    ],
   },
+
   {
-    id: "02",
-    name: "Character Two",
+    id: "02-06",
+    name: "D&D Character 02 — View 06",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character2f,
       },
-    ]
+    ],
   },
+
   {
-    id: "02",
-    name: "Character Two",
+    id: "02-07",
+    name: "D&D Character 02 — View 07",
     orientation: "portrait",
     media: [
       {
         type: "image",
         src: character2g,
       },
-    ]
+    ],
   },
 ];
 
