@@ -340,7 +340,7 @@ const policies = [
                 </p>
 
                 <p>
-                    We currently operate only through our official websites:
+                    We currently operate only through our official website:
                 </p>
 
                 <div className="policy-sites">

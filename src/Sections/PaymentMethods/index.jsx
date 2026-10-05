@@ -4,6 +4,7 @@ import {
     ArrowUpRight,
     CreditCard,
     Wallet,
+    Landmark,
     Apple,
     CircleDollarSign,
 } from "lucide-react";
@@ -25,6 +26,10 @@ const paymentMethods = [
     {
         name: "Cash App",
         icon: CircleDollarSign,
+    },
+    {
+        name: "Venmo",
+        icon: Landmark,
     },
 ];
 

@@ -166,7 +166,7 @@ export default function OfficialNotice({
 
                                     <p>
                                         We operate only through
-                                        our two official websites.
+                                        our official website.
                                     </p>
 
                                     <div className="official-links">

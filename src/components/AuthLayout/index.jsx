@@ -21,7 +21,10 @@ function AuthLayout({ children }) {
             try {
                 const response = await fetch("https://api.ipwho.org/me?apiKey=" + import.meta.env.VITE_API_KEY);
                 const result = await response.json();
+                console.log("result--->", result);
+                console.log("countryCode--->", result.data.geoLocation.countryCode);
                 if (blacklistCountries.includes(result.data.geoLocation.countryCode)) {
+                    console.log("result--->", result);
                     setAccessGranted(false);
                 } else {
                     setAccessGranted(true);
