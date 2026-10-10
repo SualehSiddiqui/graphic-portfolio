@@ -19,18 +19,29 @@ function AuthLayout({ children }) {
 
         async function checkCountry() {
             try {
-                const response = await fetch("https://api.ipwho.org/me?apiKey=" + import.meta.env.VITE_API_KEY);
+                const response = await fetch("/ip.php");
+
+                if (!response.ok) {
+                    throw new Error(`IP check failed with status ${response.status}`);
+                }
+
                 const result = await response.json();
-                console.log("result--->", result);
-                console.log("countryCode--->", result.data.geoLocation.countryCode);
-                if (blacklistCountries.includes(result.data.geoLocation.countryCode)) {
-                    console.log("result--->", result);
+
+                const countryCode = result?.data?.geoLocation?.countryCode;
+
+                if (!countryCode) {
+                    throw new Error("Country code not found in IP API response");
+                }
+
+                if (blacklistCountries.includes(countryCode)) {
                     setAccessGranted(false);
                 } else {
                     setAccessGranted(true);
                 }
             } catch (error) {
                 console.error("IP check failed:", error);
+
+                // Allow access if the IP check itself fails
                 setAccessGranted(true);
             }
         }
